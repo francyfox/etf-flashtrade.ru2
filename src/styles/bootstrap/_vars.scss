@@ -1,0 +1,51 @@
+$c-primary: hsl(0 , 0%, 0%);
+$c-secondary: hsl(205, 100%, 61%);
+$c-grey: hsl(223, 28%, 95%);
+$c-white: hsl(0, 0%, 100%);
+$c-light: hsl(202, 24%, 91%);
+$c-dark: hsl(220, 5%, 13%);
+$c-greylight: hsl(223, 28%, 95%);
+$c-bluelight: hsl(224, 11%, 62%);
+$c-greydark: hsl(0, 0%, 50%);
+$c-skin: hsl(19, 18%, 79%);
+$c-yellow: hsl(51, 89%, 78%);
+$c-danger: hsl(1, 79%, 78%);
+
+$container-lg: 970px;
+$container-xl: 1400px;
+$container-xxl: 1686px;
+
+$modal-sm: 300px;
+$modal-md: 500px;
+$modal-lg: 800px;
+$modal-xl: 1140px;
+
+$grid-breakpoints: (
+  xs: 0,
+  smx: 481px,
+  sm: 769px,
+  md: 1024px,
+  lg: 1321px,
+  xl: 1400px,
+  xxl: 1686px
+);
+
+$container-max-widths: (
+  sm: 1024px,
+  md: 1280px,
+  lg: 1320px,
+  xl: 1400px,
+  xxl: 1686px
+);
+
+$theme-colors: (
+  "primary": $c-secondary,
+  "success": $c-secondary,
+  "danger": $c-danger
+);
+
+$form-feedback-valid-color: $c-secondary;
+$form-feedback-invalid-color: $c-danger;
+
+$breadcrumb-divider: quote("—");
+$f-default: 'Avenir Next Cyr', Geneva, Arial, Helvetica, sans-serif;

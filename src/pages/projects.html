@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= require('html-loader!../layout/common/head.html').default %>
+<body class="page-projects">
+<div id="root">
+    <header-temp></header-temp>
+    <breadcrumb></breadcrumb>
+    <section class="section pb-0">
+        <div class="container-xl">
+            <h1 class="title-h1 text-uppercase">
+                Выполненные проекты
+            </h1>
+        </div>
+    </section>
+    <section class="section section-feedback bg-grey">
+        <div class="container-xl">
+            <div class="row justify-content-between">
+                <div class="col-sm-7">
+                    <div class="title-h3 mb-3 mb-sm-0">
+                        <span class="title-thin">
+                            За 12 лет мы успешно оказали свои услуги для
+                        </span>
+                        <span class="text-lumen">
+                            55 компаний
+                        </span>
+                    </div>
+                </div>
+                <div class="col-auto pe-0 pe-sm-5">
+                    <button type="button" class="btn btn-primary text-regular title-h3">
+                        Связаться с нами
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-project bg-dark">
+        <div class="project-block container-xl">
+            <form action="#" class="badge-list d-flex mb-5">
+                <!--/api/movie/_search-->
+                <button type="submit" class="badge active" value="all">
+                    Все
+                </button>
+                <button type="submit" class="badge" value="education">
+                    Образование
+                </button>
+                <button type="submit" class="badge" value="finance">
+                    Финансовый сектор
+                </button>
+                <button type="submit" class="badge" value="government">
+                    Гос. структуры
+                </button>
+            </form>
+            <div class="project-block-list">
+                <div class="project-block-list-item shadow-blue rounded-5">
+                    <div class="project-block-banner">
+                        <div class="row">
+                            <div class="project-block-banner-text col-sm-6 col-md-5">
+                                <div class="title-h3 mb-3 mb-sm-5">
+                                    Обустройство компьютерного класса для школы в Москве
+                                </div>
+                                <p class="mb-3 mb-sm-5">
+                                    Мы осуществляем комплексные поставки IT-оборудования, настройку,
+                                    запуск и обслуживания выстроенных нами систем. Вам не нужны 10 различных
+                                    компаний,
+                                    достаточно только нас!
+                                </p>
+                                <ul class="list-group list-group-check">
+                                    <li class="list-group-check-item">
+                                        текущие задачи и бизнес-процессы
+                                    </li>
+                                    <li class="list-group-check-item">
+                                        существующую архитектуру сети
+                                    </li>
+                                    <li class="list-group-check-item">
+                                        существующее оборудование и его распределение
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project-block-banner-image col-sm-6 col-md-7">
+                                <div class="cover-bg"
+                                     style="background: linear-gradient(90deg, #d3c6c0 2%, transparent 40%);"></div>
+                                <picture>
+                                    <source srcset="../img/page-projects/project-school.webp"/>
+                                    <img src="../img/page-projects/project-school.jpg" width="967" height="586"
+                                         alt="Школа"/>
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-block-list-item shadow-blue rounded-5">
+                    <div style="background: #d7e0e4" class="project-block-banner">
+                        <div class="row">
+                            <div class="project-block-banner-image col-sm-7">
+                                <div class="cover-bg"
+                                     style="background: linear-gradient(-90deg, #d7e0e4 2%, transparent 40%);"></div>
+                                <picture>
+                                    <source srcset="../img/page-projects/project-web-shop.webp"/>
+                                    <img src="../img/page-projects/project-web-shop.png" width="967" height="586"
+                                         alt="Веб-Магазин"/>
+                                </picture>
+                            </div>
+                            <div class="project-block-banner-text col-sm-5">
+                                <div class="title-h3 mb-3 mb-sm-5">
+                                    Систематизация IT для сети магазинов одежды
+                                </div>
+                                <p class="mb-3 mb-sm-5">
+                                    Мы осуществляем комплексные поставки IT-оборудования, настройку, запуск и
+                                    обслуживания выстроенных нами систем. Вам не нужны 10 различных компаний, достаточно
+                                    только нас!
+                                </p>
+                                <ul class="list-group list-group-check">
+                                    <li class="list-group-check-item">
+                                        текущие задачи и бизнес-процессы
+                                    </li>
+                                    <li class="list-group-check-item">
+                                        существующую архитектуру сети
+                                    </li>
+                                    <li class="list-group-check-item">
+                                        существующее оборудование и его распределение
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-block-list-item shadow-blue rounded-5">
+                    <div style="background: #cad2d4" class="project-block-banner">
+                        <div class="row">
+                            <div class="project-block-banner-text col-sm-5">
+                                <div class="title-h3 mb-3 mb-sm-5">
+                                    Модернизация оборудования на заводе цветных металлов
+                                </div>
+                                <p class="mb-3 mb-sm-5">
+                                    Мы осуществляем комплексные поставки IT-оборудования, настройку, запуск и
+                                    обслуживания выстроенных нами систем. Вам не нужны 10 различных компаний, достаточно
+                                    только нас!
+                                </p>
+                                <ul class="list-group list-group-check">
+                                    <li class="list-group-check-item">
+                                        текущие задачи и бизнес-процессы
+                                    </li>
+                                    <li class="list-group-check-item">
+                                        существующую архитектуру сети
+                                    </li>
+                                    <li class="list-group-check-item">
+                                        существующее оборудование и его распределение
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project-block-banner-image col-sm-7">
+                                <div class="cover-bg"
+                                     style="background: linear-gradient(90deg, #cad2d4 2%, transparent 40%);"></div>
+                                <picture>
+                                    <source srcset="../img/page-projects/project-metal.webp"/>
+                                    <img src="../img/page-projects/project-metal.png" width="967" height="586"
+                                         alt="Веб-Магазин"/>
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination dark justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">...</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">...</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <question-temp></question-temp>
+    <footer-temp></footer-temp>
+</div>
+<modals></modals>
+</body>
+</html>

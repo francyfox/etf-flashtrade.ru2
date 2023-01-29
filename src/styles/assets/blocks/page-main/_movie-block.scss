@@ -1,0 +1,7 @@
+.movie-block {
+  &-item {
+    @include media-breakpoint-down(lg) {
+      flex-basis: 250px;
+    }
+  }
+}

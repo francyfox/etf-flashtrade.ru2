@@ -1,0 +1,27 @@
+.hot-block {
+  &-item {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+
+    .card {
+      height: 100%;
+
+      .title-h4 {
+        @include media-breakpoint-down(sm) {
+          font-size: 15px;
+        }
+      }
+
+      strong {
+        @include media-breakpoint-down(sm) {
+          font-size: 13px;
+        }
+      }
+
+      .btn {
+        margin-top: auto;
+      }
+    }
+  }
+}

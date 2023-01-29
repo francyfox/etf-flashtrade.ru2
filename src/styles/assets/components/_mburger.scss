@@ -1,0 +1,45 @@
+.mburger {
+  position: fixed !important;
+  top: 15px;
+  right: 0;
+  width: 50px !important;
+  height: 50px !important;
+  background: $c-dark !important;
+  color: $c-white !important;
+  transition: color .1s ease-in-out, background-color .1s ease-in-out, top .1s linear;
+
+  &:hover {
+    background: $c-secondary !important;
+    color: $c-dark !important;
+  }
+
+  b {
+    width: 31px !important;
+    left: 14px !important;
+    height: 2px !important;
+    border-radius: 0 !important;
+  }
+
+  @include media-breakpoint-up(sm) {
+    width: 60px !important;
+    height: 60px !important;
+    b {
+      left: 17px !important;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    width: 50px !important;
+    height: 52px !important;
+  }
+
+  @include media-breakpoint-up(xl) {
+    top: 0;
+    width: 76px !important;
+    height: 76px !important;
+    b {
+      width: 44px !important;
+      left: 18px !important;
+    }
+  }
+}

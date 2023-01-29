@@ -1,0 +1,51 @@
+.pagination {
+  .page-item {
+    &:first-child, &:last-child {
+      top: 0px;
+      position: relative;
+      line-height: 1.2;
+    }
+
+    &:first-child .page-link, &:last-child .page-link {
+      color: $c-secondary;
+    }
+
+    &.active .page-link {
+      pointer-events: none;
+      color: $c-dark;
+      background: transparent;
+    }
+
+    .page-link {
+      padding: 10px 20px;
+      border: 0;
+      border-radius: 6px;
+      font-size: 30px;
+      color: $c-greydark;
+      font-weight: 700;
+      letter-spacing: 3px;
+      transition: background .1s ease-in-out, color .1s ease-in-out;
+    }
+  }
+}
+
+.pagination.dark {
+  .page-item {
+    &.active .page-link{
+      color: $c-white;
+    }
+    .page-link {
+      display: flex;
+      align-items: center;
+      background: transparent;
+
+      span {
+        display: block;
+      }
+
+      &:hover{
+        color: $c-white;
+      }
+    }
+  }
+}

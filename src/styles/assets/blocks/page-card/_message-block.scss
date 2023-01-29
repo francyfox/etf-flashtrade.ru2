@@ -1,0 +1,75 @@
+.messages-block {
+  width: 100%;
+  max-width: 530px;
+  z-index: 2;
+
+  &-item {
+    margin: 0;
+    position: relative;
+    transform: scale3d(1, 1, 1) rotateX(-25deg) rotateY(25deg) rotateZ(0deg) translate3d(0px, -10px, 1px) skew(0deg, 0deg);
+    perspective: 0;
+    perspective-origin: 50% 50%;
+    opacity: 0;
+    animation: fade-in-left 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    will-change: position;
+
+    @include media-breakpoint-down(md) {
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    @include media-breakpoint-down(smx) {
+      transform: none !important;
+    }
+  }
+
+  .messages-block-item:nth-child(2) {
+    transform: scale3d(1, 1, 1) rotateX(-25deg) rotateY(25deg) rotateZ(0deg) translate3d(0px, -18px, 0) skew(0deg, 0deg);
+  }
+
+  .messages-block-item:nth-child(3) {
+    transform: scale3d(1, 1, 1) rotateX(-25deg) rotateY(25deg) rotateZ(0deg) translate3d(0px, -15px, 0) skew(0deg, 0deg);
+  }
+
+  .messages-block-item:nth-child(4) {
+    transform: scale3d(1, 1, 1) rotateX(-25deg) rotateY(25deg) rotateZ(0deg) translate3d(0px, -30px, -10px) skew(0deg, 0deg);
+    @include media-breakpoint-down(md) {
+      max-width: 290px;
+    }
+  }
+
+  @for $i from 1 to 5 {
+    .messages-block-item:nth-child(#{$i}) {
+      animation-delay: #{$i} + s;
+    }
+  }
+
+  &-item:last-child {
+    margin-left: auto;
+    max-width: 400px;
+  }
+
+  .msg-box-right {
+    padding-right: 30px;
+  }
+
+  .text-info {
+    color: $c-bluelight;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.8;
+
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
+  }
+  .bg-white {
+    background: rgba($c-white, .5) !important;
+    backdrop-filter: blur(3px);
+    transition: background-color .1s ease-in-out;
+    &:hover {
+      background: rgba($c-white, 1) !important;
+    }
+  }
+}

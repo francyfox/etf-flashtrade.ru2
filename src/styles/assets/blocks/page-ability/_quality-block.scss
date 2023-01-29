@@ -1,0 +1,28 @@
+.page-ability {
+  .quality-block {
+    &-item {
+      margin-bottom: 68px;
+      
+      &:hover {
+        .btn {
+          transform: rotate(270deg);
+        }
+      }
+
+      figcaption {
+        margin-bottom: 22px;
+      }
+      &-text {
+        margin-bottom: 22px;
+        font-size: 17px;
+        color: $c-greydark;
+        line-height: 30px;
+      }
+      .btn {
+        margin: 0 auto;
+        display: flex;
+        transition: transform .5s cubic-bezier(.17,.67,.83,.67);
+      }
+    }
+  }
+}

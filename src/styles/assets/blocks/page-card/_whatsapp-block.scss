@@ -1,0 +1,55 @@
+.whatsapp-block {
+  @include media-breakpoint-down(lg) {
+    max-width: calc(100% - 30px);
+  }
+  p {
+    line-height: 50px !important;
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+      line-height: 1.4 !important;
+    }
+  }
+  a {
+    color: $c-white !important;
+  }
+
+  .phone {
+    @include media-breakpoint-down(smx) {
+      margin-right: 15px;
+    }
+  }
+  .list-social {
+    margin: 0;
+    padding-left: 20px;
+    @include media-breakpoint-down(smx) {
+      padding: 0;
+    }
+
+    &-item a{
+      margin: 0 10px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: solid 2px $c-white;
+      border-radius: 100%;
+      box-sizing: border-box;
+      font-size: 31px;
+      transition: border-color .1s ease-in-out, color .1s ease-in-out;
+
+      @include media-breakpoint-down(smx) {
+        margin: 0 10px 0 0;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+      }
+
+      &:hover {
+        color: rgba($c-white, .8);
+        border-color: rgba($c-white, .3);
+      }
+    }
+  }
+}

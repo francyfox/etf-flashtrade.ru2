@@ -1,0 +1,13 @@
+.section {
+  padding: 80px 0;
+  overflow: hidden;
+
+  @include media-breakpoint-down(md) {
+    padding: 30px 0;
+  }
+}
+
+@import "page-main";
+@import "page-card";
+@import "page-ability";
+

@@ -1,0 +1,17 @@
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: $c-grey;
+  z-index: 9000;
+}
+.loaded .preloader {
+  display: none;
+}

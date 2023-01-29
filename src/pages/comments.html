@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= require('html-loader!../layout/common/head.html').default %>
+<body class="page-comments">
+<div id="root">
+    <header-temp></header-temp>
+    <breadcrumb></breadcrumb>
+    <section class="section pb-0">
+        <div class="container-xl">
+            <h1 class="title-h1 text-uppercase">
+                Отзывы
+            </h1>
+        </div>
+    </section>
+    <section class="section section-feedback bg-grey">
+        <div class="container-xl">
+            <div class="row justify-content-between">
+                <div class="col-sm-6 col-lg-7">
+                    <div class="title-h3 mb-3 mb-sm-0">
+                        <span class="title-thin">
+                            За 12 лет мы успешно оказали свои услуги для
+                        </span>
+                        <span class="text-lumen">
+                            55 компаний
+                        </span>
+                    </div>
+                </div>
+                <div class="col-auto pe-0 pe-sm-5">
+                    <button type="button" class="btn btn-primary text-regular title-h3">
+                        Связаться с нами
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-comments">
+        <div class="container-xl comment-block">
+            <div class="comment-block-item row justify-content-between">
+                <div class="col-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <picture class="shadow-circle">
+                            <source srcset="../img/page-main/brand.webp">
+                            <img src="../img/page-main/brand.png" loading="lazy" width="134" height="63" alt="Автор">
+                        </picture>
+                    </div>
+                </div>
+                <div class="col-6 d-flex d-md-none justify-content-center align-items-center">
+                    <div class="movie-play movie-circle">
+                        <picture>
+                            <source srcset="../img/page-main/movie-rusal.webp">
+                            <img src="../img/page-main/movie_lazy.png" width="192" height="192" loading="lazy" alt="Русал">
+                        </picture>
+                        <button type="button" class="popup-movie">
+                                            <span class="visually-hidden">
+                                                СМОТРЕТЬ ВИДЕО
+                                            </span>
+                        </button>
+                        <div class="circle-text">
+                            <img src="../img/icons/movie-text.svg" class="injectable" alt="t"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2 mb-lg-0 ps-md-2 ps-xl-5">
+                    <div class="title-h1 title-thin text-center text-md-start">
+                        ООО РУСАЛ
+                    </div>
+                    <div class="comment-block-text text-center text-md-start">
+                        Более 22-х лет успешно работает на российском рынке информационных технологий.
+                        Компания зарекомендовала себя, как надежный партнер в реализации поставок
+                        оборудования,
+                        обслуживания компьютерной техники, проектирования и ремонта IT-структур
+                        коммерческих
+                        и
+                        государственных предприятий.
+                    </div>
+                    <a href="#" class="link d-flex justify-content-center justify-content-md-start">
+                        Читать полностью
+                    </a>
+                </div>
+                <div class="col-md-3 d-none d-md-flex justify-content-center align-items-center">
+                    <div class="movie-play movie-circle">
+                        <picture>
+                            <source srcset="../img/page-main/movie-rusal.webp">
+                            <img src="../img/page-main/movie_lazy.png" width="192" height="192" alt="Русал">
+                        </picture>
+                        <button type="button" class="popup-movie">
+                            <span class="visually-hidden">СМОТРЕТЬ ВИДЕО</span>
+                        </button>
+                        <div class="circle-text">
+                            <img src="../img/icons/movie-text.svg" class="injectable" alt="t"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr hr-grey"></div>
+            <div class="comment-block-item row justify-content-between">
+                <div class="col-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <picture class="shadow-circle">
+                            <source srcset="../img/page-comments/brand-gasprom.webp">
+                            <img src="../img/page-comments/brand-gasprom.png" width="122" height="106" alt="Автор">
+                        </picture>
+                    </div>
+                </div>
+                <div class="col-6 d-flex d-md-none justify-content-center align-items-center">
+                    <div class="movie-play movie-circle">
+                        <picture>
+                            <source srcset="../img/page-main/movie-rusal.webp">
+                            <img src="../img/page-main/movie_lazy.png" width="192" height="192" alt="Русал">
+                        </picture>
+                        <button type="button" class="popup-movie">
+                                            <span class="visually-hidden">
+                                                СМОТРЕТЬ ВИДЕО
+                                            </span>
+                        </button>
+                        <div class="circle-text">
+                            <img src="../img/icons/movie-text.svg" class="injectable" alt="t"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2 mb-lg-0 ps-md-2 ps-xl-5">
+                    <div class="title-h1 title-thin text-center text-md-start">
+                        ООО Газпром Нефть
+                    </div>
+                    <div class="comment-block-text text-center text-md-start">
+                        Идеальный формат - видеоотзыв. Однако нужно понимать, насколько это реально в вашем сегменте
+                        Поэтому предлагаем вернуться к этому вопросу, имея на руках конкретный материал.вот ни разу не
+                        видел уж совсем откровенно непостановочного видео в б2б сегменте
+                    </div>
+                    <a href="#" class="link d-flex justify-content-center justify-content-md-start">
+                        Читать полностью
+                    </a>
+                </div>
+                <div class="col-md-3 d-none d-md-flex justify-content-center align-items-center">
+                    <div class="movie-play movie-circle">
+                        <picture>
+                            <source srcset="../img/page-comments/movie-gasprom.webp">
+                            <img src="../img/page-comments/movie-gasprom.png" width="192" height="192" alt="Русал">
+                        </picture>
+                        <button type="button" class="popup-movie">
+                            <span class="visually-hidden">СМОТРЕТЬ ВИДЕО</span>
+                        </button>
+                        <div class="circle-text">
+                            <img src="../img/icons/movie-text.svg" class="injectable" alt="t"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr hr-grey"></div>
+            <div class="comment-block-item row justify-content-between">
+                <div class="col-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <picture class="shadow-circle" style="background-color: #ffd103">
+                            <source srcset="../img/page-comments/brands-rosoil.webp">
+                            <img src="../img/page-comments/brands-rosoil.png" width="175" height="125" alt="Автор">
+                        </picture>
+                    </div>
+                </div>
+                <div class="col-6 d-flex d-md-none justify-content-center align-items-center">
+                    <div class="movie-play movie-circle">
+                        <picture>
+                            <source srcset="../img/page-main/movie-rusal.webp">
+                            <img src="../img/page-main/movie_lazy.png" width="192" height="192" alt="Русал">
+                        </picture>
+                        <button type="button" class="popup-movie">
+                                            <span class="visually-hidden">
+                                                СМОТРЕТЬ ВИДЕО
+                                            </span>
+                        </button>
+                        <div class="circle-text">
+                            <img src="../img/icons/movie-text.svg" class="injectable" alt="t"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2 mb-lg-0 ps-md-2 ps-xl-5">
+                    <div class="title-h1 title-thin text-center text-md-start">
+                        ООО РОСНЕФТЬ
+                    </div>
+                    <div class="comment-block-text text-center text-md-start">
+                        НК «Роснефть» — динамично развивающаяся компания, заинтересованная в поиске и привлечении в свои
+                        ряды целеустремленных, инициативных, энергичных и творческих людей, умеющих работать в команде,
+                        готовых к совершенствованию профессиональных знаний и опыта.
+                    </div>
+                    <a href="#" class="link d-flex justify-content-center justify-content-md-start">
+                        Читать полностью
+                    </a>
+                </div>
+                <div class="col-md-3 d-none d-md-flex justify-content-center align-items-center">
+                    <div class="movie-play movie-circle">
+                        <picture>
+                            <source srcset="../img/page-comments/movie-rusoil.webp">
+                            <img src="../img/page-comments/movie-rusoil.png" width="192" height="192" alt="Руснефть">
+                        </picture>
+                        <button type="button" class="popup-movie">
+                            <span class="visually-hidden">СМОТРЕТЬ ВИДЕО</span>
+                        </button>
+                        <div class="circle-text">
+                            <img src="../img/icons/movie-text.svg" class="injectable" alt="t"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr hr-grey"></div>
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">...</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">...</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <question-temp></question-temp>
+    <footer-temp></footer-temp>
+</div>
+<modals></modals>
+</body>
+</html>

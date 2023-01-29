@@ -1,0 +1,121 @@
+.movie {
+  &-play {
+    position: relative;
+    transition: transform .1s linear;
+
+    @include media-breakpoint-up(lg) {
+      height: 149px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    button {
+      display: flex;
+      width: 125px;
+      height: 149px;
+      background: url("/src/img/page-main/play.png") center center / contain no-repeat;
+      border: 0;
+      z-index: 1;
+      @include media-breakpoint-down(lg) {
+        top: 50px;
+        left: 50px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  &-pulse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -85%;
+    left: 0;
+    position: absolute;
+    width: 391px;
+    height: 391px;
+    background: url("/src/img/page-main/movie_lazy.png") center center / 270px no-repeat,
+    url("/src/img/icons/pulse.svg") center center / contain no-repeat;
+    border-radius: 100%;
+
+    @include media-breakpoint-down(lg) {
+      position: initial;
+      width: 250px;
+      height: 250px;
+      background: url("/src/img/page-main/movie_lazy.png") center center / 80% no-repeat,
+      url("/src/img/icons/pulse.svg") center center / 100% no-repeat;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 150px;
+      height: 150px;
+      background: url("/src/img/page-main/movie_lazy.png") center center / 80% no-repeat,
+      url("/src/img/icons/pulse.svg") center center / 100% no-repeat;
+    }
+
+  }
+
+  &-circle {
+    &:hover {
+      transform: none;
+      button {
+        transform: scale(1.2);
+      }
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 255px;
+    max-height: 255px;
+
+    button {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("/src/img/page-main/play.png") center center / 30% no-repeat;
+      border: 0;
+      z-index: 1;
+      transition: transform .1s linear;
+    }
+    picture {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.circle-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  color: $c-secondary;
+  font-size: 13.2px;
+  animation: rotate360 25s linear infinite;
+  transform-origin: center;
+  box-sizing: border-box;
+  will-change: transform;
+
+  @include media-breakpoint-up(lg) {
+    width: 180%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(smx) {
+    width: 240px;
+  }
+}
+

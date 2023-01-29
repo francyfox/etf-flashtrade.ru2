@@ -1,0 +1,6 @@
+@import "transform";
+@import "position";
+
+.stop-anim {
+  animation-play-state: paused !important;
+}

@@ -1,0 +1,76 @@
+.swiper-out-nav {
+  position: relative;
+
+  &.swiper-nav-circle {
+    .swiper-button-next, .swiper-button-prev {
+      position: initial;
+      width: 96px !important;
+      height: 60px !important;
+      @include media-breakpoint-up(xxl) {
+        position: absolute;
+      }
+    }
+
+    .swiper-button-prev {
+      @include media-breakpoint-up(md) {
+        left: 50px;
+        bottom: auto;
+      }
+      @include media-breakpoint-up(xxl) {
+        left: -136px;
+      }
+    }
+
+    .swiper-button-next {
+      @include media-breakpoint-up(md) {
+        right: 50px;
+        left: auto;
+        bottom: auto;
+      }
+      @include media-breakpoint-up(xxl) {
+        right: -136px;
+      }
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+      content: '' !important;
+      width: 96px !important;
+      height: 60px !important;
+      background: url("/src/img/icons/arrow-circle-left.svg") center center / contain no-repeat;
+    }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+      content: '' !important;
+      width: 96px !important;
+      height: 60px !important;
+      background: url("/src/img/icons/arrow-circle-right.svg") center center / contain no-repeat;
+    }
+  }
+
+  &.swiper-nav-arrow {
+    .swiper-button-next, .swiper-button-prev {
+      margin: 0;
+      position: initial;
+      width: 66px !important;
+      height: 24px !important;
+      @include media-breakpoint-up(md) {
+        position: absolute;
+      }
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      position: initial;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+      content: '' !important;
+      width: 96px !important;
+      height: 60px !important;
+      background: url("/src/img/icons/arrow-left.svg") center center / contain no-repeat;
+    }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+      content: '' !important;
+      width: 96px !important;
+      height: 60px !important;
+      background: url("/src/img/icons/arrow-right.svg") center center / contain no-repeat;
+    }
+  }
+}

@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= require('html-loader!../layout/common/head.html').default %>
+<body class="page-card">
+<div id="root">
+	<header-temp></header-temp>
+    <breadcrumb></breadcrumb>
+	<section class="section section-hero">
+		<div class="container hero-block">
+			<div class="row justify-content-between">
+				<div class="hero-block-item col-smx-6 mb-5 mb-lg-0">
+					<h1 class="title-h1 text-uppercase mt-lg-5">
+						Cистематизация
+						IT для заводов
+					</h1>
+					<div class="hero-block-text text-grey">
+						IT-система без хаоса, сбоев и завышенных бюджетов на основе IT-стратегии <strong
+							class="text-lumen">за 3 месяца</strong>
+					</div>
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-form">Оставить
+						заявку
+					</button>
+				</div>
+				<div class="col-smx-6 col-md-6 bg-gradient-color d-flex justify-content-center align-items-center">
+					<div class="messages-block gap-1 d-flex flex-column justify-content-center align-items-start">
+						<div class="messages-block-item msg-box-left bg-white">
+							<div class="messages-block-item-head d-flex align-items-end">
+								<strong class="mr-3">
+									Владислав М.
+								</strong>
+								<span class="text-info">
+									Сис.админ
+								</span>
+							</div>
+							<div class="messages-block-item-text">
+								<p>
+									Затраты на IT растут каждый месяц
+								</p>
+							</div>
+						</div>
+						<div class="messages-block-item msg-box-left bg-white">
+							<div class="messages-block-item-head d-flex align-items-end">
+								<strong class="mr-3">
+									Петр Е.
+								</strong>
+								<span class="text-info">
+									Бухгалтер
+								</span>
+							</div>
+							<div class="messages-block-item-text">
+								<p>
+									Если отгрузка остановится опять из-за сбоя, <br>
+									нам нечем будет платить зарплату
+								</p>
+							</div>
+						</div>
+						<div class="messages-block-item msg-box-left bg-white">
+							<div class="messages-block-item-head d-flex align-items-end">
+								<strong class="mr-3">
+									Сергей Ч
+								</strong>
+								<span class="text-info">
+									Коммерческий директор
+								</span>
+							</div>
+							<div class="messages-block-item-text">
+								<p>
+									Пока бухгалтерия вобьет документы, год <br>
+									пройдет
+								</p>
+							</div>
+						</div>
+						<div class="messages-block-item msg-box-right text-white bg-primary">
+							<div class="messages-block-item-head d-flex">
+								<img src="../img/logo-320.png" class="mr-2" width="23" alt="logo">
+								<strong>
+									ETF -FLASHTRADE
+								</strong>
+							</div>
+							<div class="messages-block-item-text">
+								<p>
+									Предлагаем IT-систему без хаоса, сбоев и завышенных бюджетов на основе IT-стратегии
+									<strong>
+										за 3 месяца
+									</strong>
+								</p>
+							</div>
+						</div>
+					</div>
+					<picture class="bg">
+						<source srcset="../img/page-card/iphone.webp">
+						<img src="../img/page-card/iphone.png" width="683" height="688" alt="Телефон">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-movie" data-click-stop-anim>
+		<div class="anim">
+			<div class="neon neon-1"></div>
+			<div class="neon neon-2"></div>
+			<div class="neon neon-3"></div>
+			<div class="neon neon-4"></div>
+			<div class="neon neon-5"></div>
+		</div>
+		<div class="container-xl">
+			<iframe width="1232" height="693"
+					class="w-100 rounded-5"
+					src="https://www.youtube.com/embed/imhfp2-i-zg?autoplay=0&controls=0&rel=0&showinfo=0&enablejsapi=1"
+					title="YouTube video player"
+					controls="0"
+					showinfo="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+		</div>
+	</section>
+	<section class="section section-system">
+		<div class="container system-block">
+			<div class="title-h2 mb-5 text-center">
+				Систематизация IT вам подойдет, если у вас
+			</div>
+			<div class="row mb-5">
+				<div class="col-6 col-md-3">
+					<img src="../img/icons/page-card/delivery.svg" width="106" height="77" class="injectable">
+					<div class="system-block-text">
+						Регулярные сбои, которые останавливают отгрузку и производство
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<img src="../img/icons/page-card/icon-cursor-wait.svg" width="90" height="60" alt="t" class="injectable"/>
+					<div class="system-block-text">
+						ERP-система постоянно зависает и не дает нормально работать
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<img src="../img/icons/page-card/icon-doc.svg" width="80" height="80" class="injectable">
+					<div class="system-block-text">
+						Вы не успеваете быстро готовить документацию для тендеров, и поэтому проигрываете их
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<img src="../img/icons/page-card/icon-quest.svg" width="70" height="60" class="injectable">
+					<div class="system-block-text">
+						Вы не понимаете куда утекают деньги, которые вы инвестируете в компьютеры, серверы, ноутбуки и
+						т.д
+					</div>
+				</div>
+			</div>
+			<div class="title-h3 text-lumen text-center">
+                <span class="title-thin">
+                    ...а значит ежедневно
+                </span>
+                вы теряете
+                <span class="title-thin">
+                    десятки тысяч рублей
+                </span>
+			</div>
+		</div>
+	</section>
+	<section class="section section-optimize dark bg-dark">
+		<div class="container optimize-block">
+			<div class="row mb-sm-5">
+				<div class="col-sm-7 col-xl-6">
+					<div class="title-h2 text-heavy mb-5">
+						Мы занимаемся систематизацией и оптимизацией IT-системы на основе стратегии
+					</div>
+					<div class="optimize-block-text mb-5">
+						<p>
+							<strong>Систематизация IT</strong> - процесс, позволяющий выстроить прозрачную и понятную
+							работу
+							всей IT-инфраструктуры от закупки компьютерного оборудования до его обслуживания.
+						</p>
+						<p></p>
+						<p>
+							На заводах, как правило, установлена <strong>ERP-система</strong>, обеспечивающая
+							взаимодействие
+							всех отделов: от производства до директора и акционеров.
+						</p>
+					</div>
+				</div>
+				<div class="col d-flex d-sm-none justify-content-center">
+					<picture>
+						<source srcset="../img/page-card/system_pic.webp">
+						<img src="../img/page-card/system_pic.png" width="330" height="264" alt="Система">
+					</picture>
+				</div>
+			</div>
+			<div class="optimize-block-card card-dark rounded-4">
+				<div class="title-h3 title-thin mb-5">
+					Сбои в работе этой системы могут быть связаны с десятками факторов, например:
+				</div>
+				<div class="row">
+					<div class="optimize-block-item col-sm-4 d-flex flex-row flex-sm-column flex-md-row align-items-center">
+						<picture class="d-flex align-items-center flex-shrink-0">
+							<source srcset="../img/page-card/intel.webp">
+							<img src="../img/page-card/intel.png" width="102" height="129" alt="Intel Inside">
+						</picture>
+						<div class="optimize-block-card-text">
+							Устаревшее оборудование сотрудников, которое просто отказывается работать или сильно
+							“тормозит”
+						</div>
+					</div>
+					<div class="optimize-block-item col-sm-4 d-flex flex-row flex-sm-column flex-md-row align-items-center">
+						<picture class="flex-shrink-0">
+							<source srcset="../img/page-card/pc.webp">
+							<img src="../img/page-card/pc.png" width="81" height="127" alt="PC">
+						</picture>
+						<div class="optimize-block-card-text">
+							<strong>Недостаточно мощные или устаревшие серверы,</strong> которые используются
+							сотрудниками для доступа к ERP-системе
+						</div>
+					</div>
+					<div class="optimize-block-item col-sm-4 d-flex flex-row flex-sm-column flex-md-row align-items-center">
+						<picture class="d-flex align-items-center flex-shrink-0">
+							<source srcset="../img/page-card/battery.webp">
+							<img src="../img/page-card/battery.png" width="61" height="127" alt="Батарея">
+						</picture>
+						<div class="optimize-block-card-text">
+							Мощное, но <strong>плохо настроенное оборудование,</strong> из-за низкой квалификации
+							IT-специалистов в компании
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-strategy bg-dark bg-bubbles">
+		<div class="container strategy-block">
+			<div class="title-h2 mb-3 dark">
+				Что стратегия дает вам?
+			</div>
+			<div class="title-h3 text-grey-dark mb-5">
+				<span class="title-thin">В результате формирования IT-стратегии</span> <span class="text-lumen-brown">вы будете понимать:</span>
+			</div>
+			<div class="row mb-5">
+				<div class="strategy-block-item col-smx-4 d-flex flex-row flex-smx-column">
+					<div class="title-h1 text-primary">
+						ЧТО?
+					</div>
+					<div class="optimize-block-text">
+						Какое оборудование нужно закупить или модернизировать для каждой должности и каждого сотрудника
+					</div>
+				</div>
+				<div class="strategy-block-item col-smx-4 d-flex flex-row flex-smx-column">
+					<div class="title-h1 text-primary">
+						КТО?
+					</div>
+					<div class="optimize-block-text">
+						Какое количество IT-сотрудников и какой квалификации нужно вашей компании для максимально
+						эффективной работы
+					</div>
+				</div>
+				<div class="strategy-block-item col-smx-4 d-flex flex-row flex-smx-column">
+					<div class="title-h1 text-primary">
+						КАК?
+					</div>
+					<div class="optimize-block-text">
+						Как правильно выстроить систему, чтобы минимизировать сбои, потерю важных данных и сделать
+						работу IT-системы максимально эффективной.
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn btn-primary dark" data-bs-toggle="modal" data-bs-target="#modal-form">
+				Отправить заявку
+			</button>
+		</div>
+	</section>
+	<section class="section section-directions bg-white">
+		<div class="container directions-block">
+			<div class="title-h2 text-heavy text-center mb-5">
+                Мы работаем по 4 направлениям
+			</div>
+			<div class="row justify-content-between align-items-start mb-5">
+				<div class="col-sm-3">
+                    <div class="directions-block-item bg-dark rounded-5 p-0">
+                        <div class="directions-block-item-head bg-grey rounded-5">
+                            <div class="title-h4 mb-3">
+                                Производим аудит архитектуры бизнес-процессов в офисах и филиалах. Мы анализируем
+                            </div>
+                            <ul class="list-group list-group-check">
+                                <li class="list-group-check-item">
+                                    текущие задачи и бизнес-процессы
+                                </li>
+                                <li class="list-group-check-item">
+                                    существующую архитектуру сети
+                                </li>
+                                <li class="list-group-check-item">
+                                    существующее оборудование и его распределение
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="directions-block-item-foot text-white">
+                            Выполнение только этого пункта позволило нашему клиенту избавиться от … и повысить эффективность
+                            на ...
+                        </div>
+                    </div>
+				</div>
+				<div class="col-sm-3">
+                    <div class="directions-block-item bg-dark rounded-5 p-0">
+                        <div class="directions-block-item-head bg-grey rounded-5">
+                            <div class="title-h4 mb-3">
+                                Формируем стратегию IT
+                            </div>
+                            <ul class="list-group list-group-check">
+                                <li class="list-group-check-item">
+                                    анализируем текущие задачи, бизнес-процессы, архитектуру и состав оборудования на
+                                    предприятии
+                                </li>
+                                <li class="list-group-check-item">
+                                    определяем наиболее проблемные зоны
+                                </li>
+                                <li class="list-group-check-item">
+                                    прорабатываем конкретное решение: какое оборудование заменить, какое докупить, от какого
+                                    можно отказаться
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="directions-block-item-foot text-white">
+                            Другими словами, мы скажем, где и какой сервер должен стоять, что на нем должно быть
+                            установлено, где и как будут проходить коммуникации и как все это будет работать.
+                        </div>
+                    </div>
+				</div>
+				<div class="col-sm-3">
+                    <div class="directions-block-item bg-dark rounded-5 p-0">
+                        <div class="directions-block-item-head bg-grey rounded-5">
+                            <div class="title-h4 mb-3">
+                                Внедряем стратегию собственными силами
+                            </div>
+                            <ul class="list-group list-group-check">
+                                <li class="list-group-check-item">
+                                    подбираем оптимальные конфигурации и сборки оборудования для выполнения конкретно ваших
+                                    задач
+                                </li>
+                                <li class="list-group-check-item">
+                                    монтируем слаботочные сети:
+                                </li>
+                                <li class="list-group-check-item">
+                                    электричество, локальную сеть
+                                    подключаем, запускаем, настраиваем
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="directions-block-item-foot text-white">
+                            Никому не нужны компьютеры и серверы по отдельности. Вам важно, чтобы работала система В ЦЕЛОМ.
+                            Этим мы и займемся.
+                        </div>
+                    </div>
+				</div>
+				<div class="col-sm-3">
+                    <div class="directions-block-item rounded-5 p-0">
+                        <div class="directions-block-item-head bg-grey rounded-5">
+                            <div class="title-h4 mb-3">
+                                Работаем с IT-отделом
+                            </div>
+                            <ul class="list-group list-group-check">
+                                <li class="list-group-check-item">
+                                    описываем, какой штат сотрудников нужен
+                                </li>
+                                <li class="list-group-check-item">
+                                    определяем их компетенции
+                                </li>
+                                <li class="list-group-check-item">
+                                    показываем узкие места системы, которые необходимо контролировать
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="title-h3 text-lumen text-center">
+				И самый главный бонус: <span class="title-thin">вы, как руководитель или собственник,
+				сможете сами понять почему и на что расходуется каждый рубль из IT-бюджета.</span>
+			</div>
+		</div>
+	</section>
+    <div class="bg-gradient-right">
+        <section class="section section-advice">
+            <div class="container advice-block">
+                <div class="title-h2 text-heavy mb-4">
+                    Что потребуется от вас?
+                </div>
+                <div class="title-h3 mb-5">
+                    От вас потребуется только определить:
+                </div>
+                <div class="row">
+                    <div class="advice-block-item col-smx-4 col-lg-3 d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
+                        <img src="../img/icons/page-card/icon-arrow.svg" width="81" height="80" alt="t" class="injectable"/>
+                        Какие цели вы преследуете
+                    </div>
+                    <div class="advice-block-item col-smx-4 col-lg-3 d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
+                        <img src="../img/icons/page-card/icon-table.svg" width="80" height="80" alt="t" class="injectable"/>
+                        Количество офисов и рабочих мест
+                    </div>
+                    <div class="advice-block-item col-smx-4 col-lg-3 d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
+                        <img src="../img/icons/page-card/icon-net.svg" width="80" height="80" alt="t" class="injectable"/>
+                        ЕRP-система, с которой вы работаете
+                    </div>
+                    <div class="advice-block-item col-sm-4 col-lg-3 d-flex align-items-center ">
+                        <div class="msg-box-left bg-primary shadow-lg">
+                            <div class="title-h4 text-uppercase text-white">
+                                Все остальное мы сделаем за вас!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-task">
+            <div class="container task-block">
+                <div class="row justify-content-between align-items-start">
+                    <div class="col-smx-6">
+                        <div class="title-h2 mb-2 mb-sm-5">
+                            С чего начинаем?
+                        </div>
+                        <div class="task-block-text">
+                            <div class="d-flex flex-row align-items-start align-items-lg-center text-lumen mb-2 mb-sm-5">
+                                <div class="d-flex ">
+                                    <img src="../img/icons/page-card/icon-attention.svg" width="113" height="100"
+                                         class="injectable mr-5">
+                                </div>
+                                <p class="m-0">
+                                    Многие компании привыкли закупать оборудование ситуационно, без какой-либо стратегии,
+                                    ориентируясь на мнение сотрудников IT-отдела, либо системного администратора.
+                                </p>
+                            </div>
+                            <p>
+                                Однако при открытии новых филиалов или при появлении нового сотрудника, подбор нового
+                                оборудования становится проблемой: то оно несовместимо с существующим оборудованием, то
+                                такого оборудования уже не производят, то оно стоит гораздо больше, чем планировалось.
+                            </p>
+                            <p>
+                                В результате и возникают недопонимание между IT-отделом и руководителем или собственником.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-smx-6">
+                        <div class="card card-full flex-column">
+                            <div class="title-h3">
+                                Наша задача - выстроить в вашей компании IT-систему и сделать IT-расходы прозрачными и
+                                понятными.
+                            </div>
+                            <div class="title-h4 title-thin py-3">
+                                Аудит и стратегия, которая разрабатывается на его основе, включают:
+                            </div>
+                            <ol class="list-group-numbered">
+                                <li class="list-group-item">Анализ</li>
+                                <li class="list-group-item">Проектирование</li>
+                                <li class="list-group-item">Монтаж</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+	<section class="section section-special">
+		<div class="container special-block">
+			<div class="title-h1 text-uppercase">
+				Это не очередное исследование, которых миллион.
+				<span class="text-primary">
+					Это конкретный план решения ваших задач!
+				</span>
+			</div>
+			<button type="button" class="btn btn-primary mb-5">
+				Отправить заявку
+			</button>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="title-h2 pt-lg-5 text-heavy mb-5 mb-sm-0">
+						Вы ничего
+						не теряете!
+					</div>
+				</div>
+				<div class="col-md-8 special-block-list">
+					<div class="special-block-list-item d-flex align-items-center mb-5">
+						<div class="row">
+							<div class="col-4 col-xl-3 d-flex">
+								<picture>
+									<source srcset="../img/page-card/cube.webp">
+									<img src="../img/page-card/cube.png" width="261" height="249" alt="Куб"
+                                         loading="lazy">
+								</picture>
+							</div>
+							<div class="col-8 col-xl-8 d-flex flex-column justify-content-center">
+								<div class="advice-block-list-item-text">
+									<div class="title-h4">
+										Что дает стратегия Вам?
+									</div>
+									<p>
+										Вы точно будете понимать, как должна выглядеть система, решающая ваши задачи, а
+										также прозрачный бюджет на IT.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="special-block-list-item d-flex align-items-center mb-5">
+						<div class="row">
+							<div class="col-4 col-xl-3 d-flex">
+								<picture class="mr-2">
+									<source srcset="../img/page-card/year.webp">
+									<img src="../img/page-card/year.png" width="244" height="150" alt="8 лет"
+                                         loading="lazy">
+								</picture>
+							</div>
+							<div class="col-8 col-md-6 col-xl-8 d-flex flex-column justify-content-center">
+								<div class="advice-block-list-item-text">
+									<div class="title-h4">
+										Что стратегия дает нам?
+									</div>
+									<p>
+										Шанс выстроить долгосрочные отношения, ведь средний срок работы клиентов с нашей
+										компанией - 8 лет..
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="special-block-list-item d-flex align-items-center">
+						<div class="row">
+							<div class="col-4 col-xl-3 d-flex">
+								<picture class="mr-2">
+									<source srcset="../img/page-card/calc.webp">
+									<img src="../img/page-card/calc.png" width="252" height="271" alt="Калькулятор">
+								</picture>
+							</div>
+							<div class="col-8 col-md-6 col-xl-8 d-flex flex-column justify-content-center">
+								<div class="advice-block-list-item-text">
+									<div class="title-h4 ">
+										Вы ничего не теряете!
+									</div>
+									<p>
+										Стоимость проведения аудита и разработки стратегии зависит от размеров вашего
+										предприятия.
+
+										Если вы принимаете стратегию и работаете с нами дальше, мы вычитаем стоимость
+										разработки IT-стратегии из предложенного нами решения.
+									</p>
+                                    <p>
+                                        <strong>То есть вы ничего не теряете!</strong>
+                                    </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-questions bg-dark dark">
+		<div class="container">
+			<div class="title-h2 text-heavy mb-5">
+				Частые вопросы
+			</div>
+			<div class="row">
+				<div class="col-xl-8">
+					<div class="accordion" id="accordion-service">
+						<div class="accordion-item">
+							<div class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"	aria-controls="#collapseOne">
+									Нам надо останавливать работу ради аудита?
+								</button>
+							</div>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#accordion-service">
+								<div class="accordion-body">
+									Однако при открытии новых филиалов или при появлении нового сотрудника, подбор
+									нового оборудования становится проблемой: то оно несовместимо с существующим
+									оборудованием, то такого оборудования уже не производят, то оно стоит гораздо
+									больше, чем планировалось.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-header" id="panelsStayOpen-headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+										aria-controls="panelsStayOpen-collapseTwo">
+									Мой системный администратор уже сделал аудит, зачем мне ваш?
+								</button>
+							</div>
+							<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+								 aria-labelledby="panelsStayOpen-headingTwo" data-bs-parent="#accordion-service">
+								<div class="accordion-body">
+									<strong>This is the second item's accordion body.</strong> It is hidden by default,
+									until the collapse plugin adds the appropriate classes that we use to style each
+									element. These classes control the overall appearance, as well as the showing and
+									hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+									our default variables. It's also worth noting that just about any HTML can go within
+									the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-header" id="panelsStayOpenHead-4">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-4" aria-expanded="false"
+										aria-controls="panelsStayOpen-collapseThree">
+									Почему не тендер?
+								</button>
+							</div>
+							<div id="panelsStayOpen-4" class="accordion-collapse collapse"
+								 aria-labelledby="panelsStayOpenHead-4" data-bs-parent="#accordion-service">
+								<div class="accordion-body">
+									<strong>This is the third item's accordion body.</strong> It is hidden by default,
+									until the collapse plugin adds the appropriate classes that we use to style each
+									element. These classes control the overall appearance, as well as the showing and
+									hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+									our default variables. It's also worth noting that just about any HTML can go within
+									the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-header" id="panelsStayOpenHead-5">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-5" aria-expanded="false"
+										aria-controls="panelsStayOpen-5">
+									Подберу самостоятельно?
+								</button>
+							</div>
+							<div id="panelsStayOpen-5" class="accordion-collapse collapse"
+								 aria-labelledby="panelsStayOpenHead-5" data-bs-parent="#accordion-service">
+								<div class="accordion-body">
+									<strong>This is the third item's accordion body.</strong> It is hidden by default,
+									until the collapse plugin adds the appropriate classes that we use to style each
+									element. These classes control the overall appearance, as well as the showing and
+									hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+									our default variables. It's also worth noting that just about any HTML can go within
+									the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-header" id="panelsStayOpenHead-6">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-6" aria-expanded="false"
+										aria-controls="panelsStayOpen-6">
+									Мой системный администратор уже сделал аудит, зачем мне ваш?
+								</button>
+							</div>
+							<div id="panelsStayOpen-6" class="accordion-collapse collapse"
+								 aria-labelledby="panelsStayOpen-headingThree" data-bs-parent="#accordion-service">
+								<div class="accordion-body">
+									<strong>This is the third item's accordion body.</strong> It is hidden by default,
+									until the collapse plugin adds the appropriate classes that we use to style each
+									element. These classes control the overall appearance, as well as the showing and
+									hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+									our default variables. It's also worth noting that just about any HTML can go within
+									the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-header" id="panelsStayOpen-headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+										aria-controls="panelsStayOpen-collapseThree">
+									Почему не тендер?
+								</button>
+							</div>
+							<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+								 aria-labelledby="panelsStayOpen-headingThree" data-bs-parent="#accordion-service">
+								<div class="accordion-body">
+									<strong>This is the third item's accordion body.</strong> It is hidden by default,
+									until the collapse plugin adds the appropriate classes that we use to style each
+									element. These classes control the overall appearance, as well as the showing and
+									hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+									our default variables. It's also worth noting that just about any HTML can go within
+									the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-price">
+		<div class="container price-block">
+			<div class="title-h1">
+				Ценовые решения
+			</div>
+			<div class="row justify-content-between">
+				<div class="col-sm-6 col-md-4">
+					<div class="price-block-item card card-full d-flex flex-column rounded-5">
+						<div class="row justify-content-between align-items-center">
+							<div class="col">
+								<div class="title-h4">
+									Основной офис до 50 человек без филиалов
+								</div>
+							</div>
+							<div class="col-smx-4 col-sm-6 col-xl-5">
+								<div class="bg-primary msg-box-left text-white">
+									<strong>
+										Позволяет решать все описанные
+									</strong>
+								</div>
+							</div>
+						</div>
+						<ul class="price-block-list list-group">
+							<li class="list-group-item">
+								<strong>
+									Идеальны для
+								</strong>
+								<p>
+									компании с одним филиалом, до 50 человек
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Описание
+								</strong>
+								<p>
+									Наш ассортимент позволяет полностью обеспечить любую компанию всем необходимым
+									оборудованием "под ключ".
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Минусы
+								</strong>
+								<p>
+									Ключевым преимуществом ETF-FlashTrade является большой выбор электроники.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Количество задействованных сотрудников
+								</strong>
+								<p>
+									от 1 (системный администратор)
+								</p>
+							</li>
+						</ul>
+						<div class="card card-full d-flex flex-row flex-wrap flex-sm-column justify-content-between align-items-center align-items-sm-start bg-dark dark py-4">
+							<div class="flex-column">
+								<div class="title-h4 dark">
+									Стоимость
+								</div>
+								<div class="title-h3 m-0">
+									от 500 тыс. руб.
+								</div>
+								<div class="text-white mb-4">
+									+ от 200 тыс. руб на каждый филиал
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-sm dark mb-2 mr-5 mx-sm-0">
+								Отправить заявку
+							</button>
+						</div>
+						<ul class="price-block-list list-group">
+							<li class="list-group-item">
+								<strong>
+									Дополнительные издержки
+								</strong>
+								<p>
+									зарплата 1 сотрудника + закупка доп. оборудования
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="price-block-item card card-full d-flex flex-column rounded-5">
+						<div class="row justify-content-between align-items-center">
+							<div class="col">
+								<div class="title-h4">
+									Основной офис до 50 человек без филиалов
+								</div>
+							</div>
+							<div class="col-smx-4 col-sm-6 col-xl-5">
+								<div class="bg-primary msg-box-left text-white">
+									<strong>
+										Позволяет решать все описанные
+									</strong>
+								</div>
+							</div>
+						</div>
+						<ul class="price-block-list list-group">
+							<li class="list-group-item">
+								<strong>
+									Идеальны для
+								</strong>
+								<p>
+									компании с одним филиалом, до 50 человек
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Описание
+								</strong>
+								<p>
+									Наш ассортимент позволяет полностью обеспечить любую компанию всем необходимым
+									оборудованием "под ключ".
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Минусы
+								</strong>
+								<p>
+									Ключевым преимуществом ETF-FlashTrade является большой выбор электроники.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Количество задействованных сотрудников
+								</strong>
+								<p>
+									от 1 (системный администратор)
+								</p>
+							</li>
+						</ul>
+						<div class="card card-full d-flex flex-row flex-wrap flex-sm-column justify-content-between align-items-center align-items-sm-start bg-dark dark py-4">
+							<div>
+								<div class="title-h4 dark">
+									Стоимость
+								</div>
+								<div class="title-h3 m-0">
+									от 500 тыс. руб.
+								</div>
+								<div class="text-white mb-4">
+									+ от 200 тыс. руб на каждый филиал
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-sm dark mb-2 mr-5 mx-sm-0">
+								Отправить заявку
+							</button>
+						</div>
+						<ul class="price-block-list list-group">
+							<li class="list-group-item">
+								<strong>
+									Дополнительные издержки
+								</strong>
+								<p>
+									зарплата 1 сотрудника + закупка доп. оборудования
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="price-block-item card card-full d-flex flex-column rounded-5">
+						<div class="row justify-content-between align-items-center">
+							<div class="col">
+								<div class="title-h4">
+									Основной офис до 50 человек без филиалов
+								</div>
+							</div>
+							<div class="col-smx-4 col-sm-6 col-xl-5">
+								<div class="bg-primary msg-box-left text-white">
+									<strong>
+										Позволяет решать все описанные
+									</strong>
+								</div>
+							</div>
+						</div>
+						<ul class="price-block-list list-group">
+							<li class="list-group-item">
+								<strong>
+									Идеальны для
+								</strong>
+								<p>
+									компании с одним филиалом, до 50 человек
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Описание
+								</strong>
+								<p>
+									Наш ассортимент позволяет полностью обеспечить любую компанию всем необходимым
+									оборудованием "под ключ".
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Минусы
+								</strong>
+								<p>
+									Ключевым преимуществом ETF-FlashTrade является большой выбор электроники.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<strong>
+									Количество задействованных сотрудников
+								</strong>
+								<p>
+									от 1 (системный администратор)
+								</p>
+							</li>
+						</ul>
+						<div class="card card-full d-flex flex-row flex-wrap flex-sm-column justify-content-between align-items-center align-items-sm-start bg-dark dark py-4">
+							<div>
+								<div class="title-h4 dark">
+									Стоимость
+								</div>
+								<div class="title-h3 m-0">
+									от 500 тыс. руб.
+								</div>
+								<div class="text-white mb-4">
+									+ от 200 тыс. руб на каждый филиал
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-sm dark mb-2 mr-5 mx-sm-0">
+								Отправить заявку
+							</button>
+						</div>
+						<ul class="price-block-list list-group">
+							<li class="list-group-item">
+								<strong>
+									Дополнительные издержки
+								</strong>
+								<p>
+									зарплата 1 сотрудника + закупка доп. оборудования
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-whatsapp">
+		<div class="container whatsapp-block bg-whatsapp rounded-5 p-2 p-smx-5">
+			<div class="title-h3 text-white">
+				<p>
+					<span class="title-thin">
+						Если вы не можете подобрать решение, не хотите в этом разбираться или у вас уже есть собственное видение,
+					</span>
+					<a class="text-white" href="#">
+						оставьте заявку
+					</a>
+				</p>
+				<p>
+					<span class="title-thin">
+							или свяжитесь с нами по телефону / через WhatsApp <br/>
+					</span>
+				</p>
+				<div class="d-flex flex-wrap align-items-center">
+					<a href="tel:+74952255249" class="phone text-white text-decoration-none">+7 (495) 225-52-49</a>
+					<ul class="list-social d-flex">
+						<li class="list-social-item">
+							<a href="#" class="text-primary" aria-label="whatsapp">
+								<i color="#FFF" class="fab fa-whatsapp"></i>
+							</a>
+						</li>
+						<li class="list-social-item">
+							<a href="#" class="text-primary" aria-label="telegram">
+                                <img src="../img/icons/telegram-plane.svg" width="24" height="24" fill="#FFF" class="injectable">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<trade-temp></trade-temp>
+	<section class="section section-hot">
+		<div class="container hot-block">
+			<div class="title-h1">
+				Возможно, вас заинтересует
+			</div>
+			<div class="row">
+				<div class="hot-block-item col-sm-4">
+					<div class="hot-block-item card card-full d-flex flex-column align-items-start">
+						<picture class="rounded-3 overflow-hidden mb-2">
+							<source srcset="../img/page-card/hot-sysadmin.webp">
+							<img src="../img/page-card/hot-sysadmin.png" width="431" height="261" alt="Сисадмин">
+						</picture>
+						<div class="title-h4 mb-2">
+							Модернизация оборудования
+						</div>
+						<strong class="mb-2">
+							Какие задачи решает
+						</strong>
+						<ul class="list-group-check">
+							<li class="list-group-check-item">
+								текущие задачи и бизнес-процессы
+							</li>
+							<li class="list-group-check-item">
+								существующую архитектуру сети
+							</li>
+							<li class="list-group-check-item">
+								существующее оборудование и его распределение
+							</li>
+						</ul>
+						<button type="button" class="btn btn-primary btn-sm">
+							Подробнее
+						</button>
+					</div>
+				</div>
+				<div class="hot-block-item col-sm-4">
+					<div class="hot-block-item card card-full d-flex flex-column align-items-start">
+						<picture class="rounded-3 overflow-hidden mb-2">
+							<source srcset="../img/page-card/hot-import.webp">
+							<img src="../img/page-card/hot-import.png" width="431" height="261" alt="Импорт">
+						</picture>
+						<div class="title-h4 mb-2">
+                            Импортозамещение
+						</div>
+						<strong class="mb-2">
+                            Какие задачи решает
+						</strong>
+						<ul class="list-group-check">
+							<li class="list-group-check-item">
+								текущие задачи и бизнес-процессы
+							</li>
+							<li class="list-group-check-item">
+								существующую архитектуру сети
+							</li>
+							<li class="list-group-check-item">
+								существующее оборудование и его распределение
+							</li>
+						</ul>
+						<button type="button" class="btn btn-primary btn-sm">
+							Подробнее
+						</button>
+					</div>
+				</div>
+				<div class="hot-block-item col-sm-4">
+					<div class="hot-block-item card card-full d-flex flex-column align-items-start">
+						<picture class="rounded-3 overflow-hidden mb-2">
+							<source srcset="../img/page-card/hot-system.webp">
+							<img src="../img/page-card/hot-system.png" width="431" height="261" alt="Система">
+						</picture>
+						<div class="title-h4 mb-2">
+                            Систематизация IT
+						</div>
+						<strong class="mb-2">
+							Какие задачи решает
+						</strong>
+						<ul class="list-group-check">
+							<li class="list-group-check-item">
+								текущие задачи и бизнес-процессы
+							</li>
+							<li class="list-group-check-item">
+								существующую архитектуру сети
+							</li>
+							<li class="list-group-check-item">
+								существующее оборудование и его распределение
+							</li>
+						</ul>
+						<button type="button" class="btn btn-primary btn-sm">
+							Подробнее
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-quality bg-dark dark">
+		<div class="container quality-block">
+			<div class="title-h1">
+				Компетенции
+			</div>
+			<div class="row">
+				<div class="quality-block-item col-6 col-md-3">
+					<figure class="figure">
+						<a href="#">
+							<picture class="d-flex rounded-3 overflow-hidden mb-4">
+								<source srcset="../img/page-card/quality-audit.webp">
+								<img src="../img/page-card/quality-audit.jpg" width="378" height="466" alt="Сисадмин">
+							</picture>
+							<figcaption class="figure-caption title-h4 text-white text-center">
+								<strong>Аудит IT</strong>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+				<div class="quality-block-item col-6 col-md-3">
+					<figure class="figure">
+						<a href="#">
+							<picture class="d-flex rounded-3 overflow-hidden mb-4">
+								<source srcset="../img/page-card/quality-erp.webp">
+								<img src="../img/page-card/quality-erp.png" width="378" height="466" alt="ERP сервер">
+							</picture>
+							<figcaption class="figure-caption title-h4 text-white text-center">
+								<strong>Серверы для ERP-систем</strong>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+				<div class="quality-block-item col-6 col-md-3">
+					<figure class="figure">
+						<a href="#">
+							<picture class="d-flex rounded-3 overflow-hidden mb-4">
+								<source srcset="../img/page-card/quality-audit.webp">
+								<img src="../img/page-card/quality-audit.jpg" width="378" height="466" alt="Сисадмин">
+							</picture>
+							<figcaption class="figure-caption title-h4 text-white text-center">
+								<strong>Аудит IT</strong>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+				<div class="quality-block-item col-6 col-md-3">
+					<figure class="figure">
+						<a href="#">
+							<picture class="d-flex rounded-3 overflow-hidden mb-4">
+								<source srcset="../img/page-card/quality-erp.webp">
+								<img src="../img/page-card/quality-erp.png" width="378" height="466" alt="ERP сервер">
+							</picture>
+							<figcaption class="figure-caption title-h4 text-white text-center">
+								<strong>Серверы для ERP-систем</strong>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+  <comment-temp></comment-temp>
+  <question-temp></question-temp>
+	<footer-temp></footer-temp>
+</div>
+<modals></modals>
+</body>
+</html>

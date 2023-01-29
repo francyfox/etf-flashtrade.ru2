@@ -1,0 +1,50 @@
+@import "page-main";
+@import "page-card";
+@import "page-projects";
+@import "page-ability";
+
+/**
+ TODO: split
+*/
+
+.footer-block-navbar {
+  .nav-item {
+    a.nav-link {
+      padding: 14px 0;
+      &:hover {
+        color: $c-dark;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.footer-block-social {
+  font-size: 27px;
+  svg path {
+    color: $c-dark;
+    transition: color .1s ease-in-out;
+    &:hover {
+      color: rgba($c-primary, .6);
+    }
+  }
+}
+
+.footer-block {
+  .phone a {
+    color: $c-primary;
+    text-decoration: none;
+    transition: color .1s ease-in-out;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 32px;
+    }
+
+    &:hover {
+      color: rgba($c-primary, .6);
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-thickness: 2px;
+    }
+  }
+}

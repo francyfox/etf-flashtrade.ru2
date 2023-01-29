@@ -1,0 +1,46 @@
+.card {
+  padding: 70px 50px;
+  max-width: 327px;
+  flex-direction: row;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 35px 62px rgba(0, 59, 101, 0.15);
+
+  @include media-breakpoint-down(lg) {
+    padding: 20px;
+  }
+
+  &-full {
+    max-width: 100%;
+  }
+}
+
+.card-link {
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+  &:hover {
+    background: rgba($c-light, .7);
+
+    .link {
+      text-decoration: none;
+    }
+  }
+}
+
+.card-link + .card-link {
+  margin: 0;
+}
+
+.card-dark {
+  padding: 66px 71px;
+  background: rgba($c-white, 0.05);
+  box-shadow: 0 35px 62px rgba(0, 0, 0, 0.15);
+
+  @include media-breakpoint-down(lg) {
+    padding: 45px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 23px;
+  }
+}

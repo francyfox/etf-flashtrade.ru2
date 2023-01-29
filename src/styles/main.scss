@@ -1,0 +1,15 @@
+@import "bootstrap/custom";
+@import "assets/index";
+
+#__webpack_status_bar__ { // sass-lint:disable-line no-ids
+  height: 4px !important;
+}
+
+
+#root { // sass-lint:disable-line no-ids
+  width: 100%;
+}
+
+.injectable {
+  background: transparent;
+}

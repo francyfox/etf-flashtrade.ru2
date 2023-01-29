@@ -1,0 +1,12 @@
+@import "fonts";
+@import "src/styles/bootstrap/vars";
+@import "helpers";
+@import "base";
+@import "animation";
+@import "components";
+@import "sections";
+@import "blocks";
+
+[aria-label="telegram"] svg {
+  min-width: 13px;
+}

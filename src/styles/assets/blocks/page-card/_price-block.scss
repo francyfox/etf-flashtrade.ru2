@@ -1,0 +1,49 @@
+.price-block {
+
+  &-list {
+    .list-group-item {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
+  &-item {
+    padding: 43px 40px;
+    margin-bottom: 40px;
+
+    @include media-breakpoint-down(xl) {
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .title-h4 {
+      @include media-breakpoint-down(smx) {
+        margin: 20px 0 10px;
+        font-size: 20px !important;
+      }
+    }
+
+    strong {
+      @include media-breakpoint-down(smx) {
+        font-size: 18px !important;
+      }
+    }
+
+    .msg-box-left {
+      padding: 14px;
+      @include media-breakpoint-down(xxl) {
+        margin: 0;
+        font-size: 14px;
+      }
+      @include media-breakpoint-down(smx) {
+        padding: 4px 8px;
+        border-radius: 15px;
+      }
+    }
+
+    .card {
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+}

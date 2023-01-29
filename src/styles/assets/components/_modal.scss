@@ -1,0 +1,116 @@
+.modal-movie {
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-content {
+    height: 100%;
+    background: transparent;
+    border: none;
+
+    .modal-header {
+      border-bottom: 0;
+      .btn-close {
+        background: transparent;
+        color: $c-white;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .modal-dialog {
+    width: 100%;
+    height: calc(100vh - 100px);
+    max-width: 890px !important;
+
+    .modal-body {
+      background: $c-dark !important;
+    }
+  }
+}
+
+.modal-open #root { // sass-lint:disable-line no-ids
+  filter: blur(6px);
+}
+
+.modal {
+  background: rgba($c-greydark, .7);
+
+  &-dialog {
+    @include media-breakpoint-up(md) {
+      max-width: 890px;
+    }
+  }
+
+  &-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  &-header {
+    background: transparent;
+    border: none;
+    .btn-close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 45px;
+      color: $c-white;
+      background: transparent;
+      opacity: 1;
+      transition: opacity .1s ease-in-out, transform .1s cubic-bezier(.17,.67,.83,.67);
+
+      &:hover {
+        opacity: .7;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &-body {
+    color: $c-white;
+    background: transparent;
+
+    .link, .btn {
+      color: $c-white;
+    }
+
+    label {
+      font-size: 14px;
+      @include media-breakpoint-up(sm) {
+        font-size: 20px;
+      }
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"] {
+      background: transparent;
+      color: $c-white;
+      font-size: 20px;
+      box-shadow: 0 2px 0 0 $c-white;
+      border: 0 !important;
+      border-radius: 0;
+      transition: box-shadow .1s ease-in-out;
+
+      &:focus:invalid {
+        box-shadow: 0 2px 0 0 lighten($danger, .3);
+      }
+
+      &:focus:valid:required {
+        box-shadow: 0 2px 0 0 $c-yellow;
+      }
+
+      &:valid:not(:required) {
+        box-shadow: 0 2px 0 0 $c-white;
+      }
+
+      &:valid {
+        box-shadow: 0 2px 0 0 $c-secondary;
+      }
+
+      &::placeholder {
+        color: $c-white !important;
+      }
+    }
+  }
+}

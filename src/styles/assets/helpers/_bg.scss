@@ -1,0 +1,88 @@
+.bg-white {
+  background-color: $c-white;
+
+  &.bg-bubbles {
+    background: url("/src/img/page-main/ball_white.png") 10% calc(100% - 40px) / 312px no-repeat,
+    url("/src/img/page-main/ball_white.png") 5% calc(100% - 149px) / 191px no-repeat,
+    url("/src/img/page-main/ball_white.png") 5% 20% / 146px no-repeat,
+    url("/src/img/page-main/ball_white.png") 110% 50% / 312px no-repeat, $c-white;
+    background-attachment: fixed;
+
+    @include media-breakpoint-down(smx) {
+      background: url("/src/img/page-main/ball_white.png") 5% calc(100% - 149px) / 191px no-repeat, $c-white;
+      background-attachment: initial !important;
+    }
+  }
+}
+
+.bg-grey {
+  background-color: $c-grey;
+  &.bg-bubbles {
+    background: url("/src/img/page-main/ball_white.png") 5% calc(100% - 149px) / 191px no-repeat,
+    url("/src/img/page-main/ball_white.png") 5% calc(100% - 149px) / 191px no-repeat,
+    url("/src/img/page-main/ball_white.png") 110% 50% / 312px no-repeat, $c-grey;
+    background-attachment: fixed;
+    @include media-breakpoint-down(smx) {
+      background: url("/src/img/page-main/ball_white.png") 5% calc(100% - 149px) / 191px no-repeat, $c-grey;
+      background-attachment: initial !important;
+    }
+  }
+}
+
+.bg-dark {
+  background-color: $c-dark !important;
+  &.bg-bubbles {
+    background: url("/src/img/page-main/ball_black.png") 90% 20% / 312px no-repeat, $c-dark !important;
+    background-attachment: fixed !important;
+    @include media-breakpoint-down(smx) {
+      background-attachment: initial !important;
+    }
+  }
+}
+
+.bg-pc {
+  position: relative;
+
+  &:after {
+    display: block;
+    top: -48px;
+    left: -25%;
+    position: absolute;
+    content: "";
+    width: 155%;
+    height: 155%;
+    background: url("/src/img/page-main/cloud-web.png") 50% 0% / 66% no-repeat, url("/src/img/page-main/pc.png") 50% 50% / 70% no-repeat;
+
+    @include media-breakpoint-down(xl) {
+      background: url("/src/img/page-main/cloud-web.png") 50% 20% / 66% no-repeat, url("/src/img/page-main/pc.png") 50% 20% / 70% no-repeat;
+    }
+  }
+
+  picture {
+    z-index: 1;
+  }
+}
+
+.bg-gradient-color {
+  position: relative;
+
+  picture {
+    z-index: 1;
+  }
+
+  &:before {
+    display: block;
+    top: 0px;
+    left: -55%;
+    position: absolute;
+    content: "";
+    width: 155%;
+    height: 155%;
+    background: radial-gradient(ellipse 300px 300px at center, rgba(#97FFBA, .5), transparent),
+    radial-gradient(ellipse 300px 300px at 63% 50%, rgba(#9CD1FF, .4), transparent);
+  }
+}
+
+.bg-whatsapp {
+  background: radial-gradient(ellipse 110% 285% at top right, #1FCC89 40%, $c-secondary 60%);
+}

@@ -1,0 +1,15 @@
+.system-block {
+  svg {
+    min-height: 80px;
+    margin-bottom: 24px;
+  }
+
+  &-text {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+  }
+}

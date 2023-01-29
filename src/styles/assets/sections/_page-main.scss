@@ -1,0 +1,54 @@
+.section-hero {
+  padding: 60px 0 200px;
+  @include media-breakpoint-down(xl) {
+    padding: 30px 0 50px;
+  }
+}
+
+.section-movie {
+  padding: 24px 0 16px;
+  overflow: initial;
+}
+
+.section-about {
+  padding: 155px 0 261px;
+  background: url("/src/img/page-main/banner1.webp") center top / cover no-repeat;
+
+  @include media-breakpoint-down(md) {
+    padding: 55px 0 100px;
+  }
+}
+
+.section-client {
+  padding-top: 104px;
+  background: linear-gradient(135deg, rgb(247, 248, 251) 24%, rgb(236, 237, 240) 24%, rgb(238, 241, 245) 20%);
+  @include media-breakpoint-down(md) {
+    padding-top: 45px;
+  }
+}
+
+.section-services {
+  padding-top: 105px;
+  @include media-breakpoint-down(md) {
+    padding-top: 45px;
+  }
+}
+
+.section-comment {
+  background: url("/src/img/page-main/ball_white.webp") 75% 40% / 309px no-repeat,
+  radial-gradient(ellipse 300px 300px at 67% 50%, rgba(#97FFBA, .5), transparent),
+  radial-gradient(ellipse 150px 150px at 81% 67%, rgba(#9CD1FF, .7), transparent);
+
+  &.nowebp-alpha {
+    background: url("/src/img/page-main/ball_white.png") 75% 40% / 309px no-repeat,
+    radial-gradient(ellipse 300px 300px at 67% 50%, rgba(#97FFBA, .5), transparent),
+    radial-gradient(ellipse 150px 150px at 81% 67%, rgba(#9CD1FF, .7), transparent);
+  }
+}
+
+.section-project {
+  background: url("/src/img/page-main/bg-dark-ciricle.webp") 50% 50% / cover fixed no-repeat;
+  @include media-breakpoint-down(md) {
+    background-attachment: local;
+  }
+}

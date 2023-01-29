@@ -1,0 +1,26 @@
+.client-block {
+  .title-h1 {
+    font-size: 60px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 30px;
+    }
+  }
+  &-text {
+    font-size: 17px;
+  }
+  &-card {
+    .link {
+      font-weight: bold;
+    }
+    svg {
+      margin-right: 19px;
+      min-height: 42px;
+      max-height: 42px;
+
+      @include media-breakpoint-down(xl) {
+        margin-right: 0;
+      }
+    }
+  }
+}

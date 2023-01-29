@@ -1,0 +1,12 @@
+.shadow-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 100%;
+  box-shadow: 14px 20px 20px 4px rgba(0, 59, 101, 0.07);
+  background: $c-white;
+  overflow: hidden;
+  transition: box-shadow .3s linear;
+}

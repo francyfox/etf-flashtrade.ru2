@@ -1,0 +1,44 @@
+.directions-block {
+
+  .row {
+    @include media-breakpoint-down(xl) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &-item {
+    background: linear-gradient(0deg, $c-dark 80%, $c-grey 80%);
+
+    @include media-breakpoint-down(md) {
+      border: solid 1px $c-white;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+
+    &-head {
+      padding: 29px 21px;
+      box-shadow: inset 0 0 0 2px $c-grey;
+      @include media-breakpoint-down(md) {
+        padding: 30px 15px;
+      }
+    }
+    &-foot {
+      padding: 29px 21px 40px;
+      @include media-breakpoint-down(md) {
+        padding: 30px 15px;
+        font-size: 14px;
+      }
+    }
+  }
+  &-item:not(.bg-dark) {
+    background: $c-grey;
+  }
+  .rounded-5 {
+    @include media-breakpoint-down(md) {
+      border-radius: 15px !important;
+    }
+  }
+}

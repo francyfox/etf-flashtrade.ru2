@@ -1,0 +1,38 @@
+.badge-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+
+  @include media-breakpoint-down(md) {
+    gap: 8px;
+  }
+
+  .badge {
+    &:active:focus {
+      color: $c-dark;
+      background: $c-white;
+      box-shadow: inset 0 0 4px 4px $c-white;
+    }
+
+    &.active, &:active {
+      color: $c-greydark;
+      background: transparent;
+      box-shadow: 0 0 0px 2px $c-greydark;
+      transition: background-color 0s ease-in-out, box-shadow 0s ease-in-out;
+    }
+
+    &:hover {
+      color: $c-white;
+      background: transparent;
+      box-shadow: inset 0 0 0px 2px $c-greydark;
+    }
+    padding: 13px 31px 10px 29px;
+    font-size: 17px;
+    font-weight: 400;
+    color: $c-white;
+    background: $c-greydark;
+    border-radius: 30px;
+    border: 0;
+    transition: background-color .1s ease-in-out, box-shadow .1s ease-in-out;
+  }
+}

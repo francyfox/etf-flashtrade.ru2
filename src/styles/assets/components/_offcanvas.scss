@@ -1,0 +1,43 @@
+.offcanvas{
+  &-contacts {
+    .list-social {
+      margin: auto 0;
+      padding: 0;
+      gap: 15px;
+
+      &-item {
+        font-size: 24px;
+      }
+    }
+    .phone a{
+      font-size: 20px;
+      font-weight: 700;
+      color: $c-primary;
+      text-decoration: none;
+    }
+  }
+  &-body {
+    .navbar-nav .nav-item a.nav-link {
+      border-radius: 0;
+    }
+    .navbar-nav .nav-item.dropdown ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 0;
+      position: initial;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, height .3s linear;
+      border-radius: 0;
+
+      &.opened {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+      }
+
+      li a {
+        box-shadow: inset 4px 0px 0 $c-secondary
+      }
+    }
+  }
+}

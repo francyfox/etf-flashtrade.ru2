@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= require('html-loader!../layout/common/head.html').default %>
+<body>
+<div id="root">
+	<header-temp></header-temp>
+    <div class="preloader">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="spinner-border text-primary mb-2" role="status"></div>
+            <span class="title-h4">Сайт загружается... подождите</span>
+        </div>
+    </div>
+	<section class="section section-hero bg-white bg-bubbles">
+		<div class="container hero-block">
+			<div class="row">
+				<div class="col-md-6 mb-5 mb-lg-0">
+					<h1 class="title-h1 text-uppercase">
+						ЕТФ-Флештрейд —
+						эксперт в области
+						IT услуг
+					</h1>
+					<div class="hero-block-text text-grey">
+						Основу нашего персонала составляют специалисты, имеющие многолетний опыт работы в ИТ-области,
+					</div>
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-form-feedback">Оставить
+						заявку
+					</button>
+				</div>
+				<div class="col-md-6 bg-pc bg-gradient-color">
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-movie bg-grey">
+		<div class="container movie-block">
+			<div class="row justify-content-start">
+				<div class="movie-block-item col-sm-4 col-xl-3 mb-2 mb-lg-0">
+					<div class="movie-play">
+						<div class="movie-pulse">
+							<button type="button" href="#modal-movie" data-bs-toggle="modal" data-bs-target="#modal-movie" class="popup-movie">
+                                <span class="visually-hidden">Смотреть видео</span>
+                            </button>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-7 col-xl-8 d-flex align-items-center">
+					<div class="movie-block-text title-h3">
+						<strong>Узнайте за <span class="text-lumen">1 минуту</span>,</strong>
+						<span class="title-thin">кому и как мы помогаем быть лучше и эффективнее!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-about bg-dark dark">
+		<div class="container about-block">
+			<div class="row">
+				<div class="col-auto col-md-8 col-xl-6 offset-md-4 offset-xl-6">
+					<div class="about-block-title title-h2 mb-4">
+						О компании <br>
+						ET<span class="text-lumen-blue">F Флештре</span>йд
+					</div>
+					<div class="about-block-text">
+						<p>
+							Более чем двадцатилетний опыт работы в области ИТ-услуг в Москве позволяет нам с
+							уверенностью браться за сложные проекты.
+							На сегодняшний день нашими клиентами являются более 500 компаний.
+						</p>
+						<br>
+						<p>
+							И в каждом конкретном случае мы находим наилучшее решение, которое максимально полно
+							учитывает индивидуальные
+							запросы клиента. Структура ETF-FlashTrade выстроена таким образом, что наш заказчик всегда в
+							режиме реального времени
+							можете узнать о своем заказе, ходе работ или статусе ремонта на нашем сайте или у
+							персонального менеджера, закрепленного
+							за каждым клиентом.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-client bg-grey bg-gradient-grey">
+		<div class="container-xl client-block">
+			<div class="row justify-content-center justify-content-lg-start mb-4">
+				<div class="col-auto">
+					<div class="title-h2 mb-2 m-lg-0 text-center text-lg-start">
+						Для кого мы работаем
+					</div>
+				</div>
+				<div class="col-md-4 d-flex justify-content-center justify-content-lg-start align-items-center">
+					<div class="client-block-text text-grey text-center text-lg-start px-md-4">
+						Более 500 клиентов воспользовались <br>
+						нашими услугами
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center justify-content-lg-start justify-content-xl-between mb-5 px-4 px-xl-0 gap-4">
+				<a href="#"
+				   class="card card-link client-block-card col-sm-6 col-lg-3 d-flex flex-column flex-lg-row justify-content-center align-items-center">
+					<img src="../img/icons/page-main/icon_baby.svg" width="80" height="80" class="injectable">
+					<div class="link text-center text-lg-start">
+						Дошкольное
+						образование
+					</div>
+				</a>
+				<a href="#"
+				   class="card card-link client-block-card col-sm-6 col-lg-3 d-flex flex-column flex-lg-row justify-content-center align-items-center">
+					<img src="../img/icons/page-main/icon_edit.svg" width="50" height="41" class="injectable">
+					<div href="#" class="link text-center text-lg-start">
+						Школы
+					</div>
+				</a>
+				<a href="#"
+				   class="card card-link client-block-card col-sm-6 col-lg-3 d-flex flex-column flex-lg-row justify-content-center align-items-center">
+					<img src="../img/icons/page-main/icon_study.svg" width="50" height="42" class="injectable">
+					<div href="#" class="link text-center text-lg-start">
+						Университеты
+					</div>
+				</a>
+				<a href="#"
+				   class="card card-link client-block-card col-sm-6 col-lg-3 d-flex flex-column flex-lg-row justify-content-center align-items-center">
+					<img src="../img/icons/page-main/icon_book.svg" width="42" height="50" class="injectable">
+					<div href="#" class="link text-center text-lg-start">
+						Дополнительное
+						образование
+					</div>
+				</a>
+			</div>
+			<div class="row justify-content-center">
+				<div class="btn btn-show d-flex justify-content-center align-items-center">
+					Показать еще
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-services bg-white">
+		<div class="container-xl service-block">
+			<div class="row mb-5 justify-content-center justify-content-md-start">
+				<div class="col-auto">
+					<div class="title-h2 m-0">
+						Наши услуги
+					</div>
+				</div>
+				<div class="col-auto d-flex align-items-center">
+					<div class="btn btn-secondary btn-sm">
+						Смотреть все
+					</div>
+				</div>
+			</div>
+			<div class="swiper-out-nav swiper-nav-circle">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <picture class="col-md-6 d-flex justify-content-center">
+                                    <source srcset="../img/page-main/card_man.webp">
+                                    <img src="../img/page-main/card_man.jpg" width="604" height="443"
+                                         loading="lazy"
+                                         class="rounded-5 resize-lg"
+                                         alt="Сервисы">
+                                </picture>
+                                <div class="col-md-6">
+                                    <div class="title-h2 mb-3">
+                                        Систематизация IT
+                                    </div>
+                                    <div class="service-block-text">
+                                        Остальные разделы из структуры страницы, аналогично странице оффера, являются
+                                        необязательными
+                                        для заполнения для страниц данного типа. Но, как показывает практика, при
+                                        оптимизации сайта
+                                    </div>
+                                    <ul class="service-block-list list-group my-4">
+                                        <li class="title-h4">
+                                            Предлагаем для
+                                        </li>
+                                        <li class="list-group-item">
+                                            <img src="../img/icons/page-main/icon_baby.svg" class="injectable">
+                                            <a href="#" class="link">Дошкольное образование</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <img src="../img/icons/page-main/icon_edit.svg" class="injectable">
+                                            <a href="#" class="link">Школы</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <img src="../img/icons/page-main/icon_study.svg" class="injectable">
+                                            <a href="#" class="link">Университеты</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <img src="../img/icons/page-main/icon_book.svg" class="injectable">
+                                            <a href="#" class="link">Дополнительное образование</a>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-center my-5 my-xxl-0">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<trade-temp></trade-temp>
+    <comment-temp></comment-temp>
+
+	<section class="section section-project bg-dark">
+		<div class="project-block container-xl">
+			<div class="row dark mb-5">
+				<div class="col-auto">
+					<div class="title-h1 m-0">
+						Выполненные проекты
+					</div>
+				</div>
+				<div class="col-auto d-flex align-items-center">
+					<div class="btn btn-secondary btn-sm dark">Смотреть все</div>
+				</div>
+			</div>
+			<div class="swiper-out-nav text-pagination swiper-nav-circle">
+				<div class="swiper-text-pagination badge-list d-flex mb-5"></div>
+				<div class="swiper shadow-blue rounded-5">
+					<div class="swiper-wrapper">
+                        <div data-name="Финансовый сектор" class="swiper-slide">
+                            <div class="project-block-banner">
+                                <div class="row">
+                                    <div class="project-block-banner-text col-sm-6 col-md-5">
+                                        <div class="title-h3 mb-3 mb-sm-5">
+                                            Обустройство компьютерного класса для школы в Москве
+                                        </div>
+                                        <p class="mb-3 mb-sm-5">
+                                            Мы осуществляем комплексные поставки IT-оборудования, настройку,
+                                            запуск и обслуживания выстроенных нами систем. Вам не нужны 10 различных
+                                            компаний,
+                                            достаточно только нас!
+                                        </p>
+                                        <ul class="list-group list-group-check">
+                                            <li class="list-group-check-item">
+                                                текущие задачи и бизнес-процессы
+                                            </li>
+                                            <li class="list-group-check-item">
+                                                существующую архитектуру сети
+                                            </li>
+                                            <li class="list-group-check-item">
+                                                существующее оборудование и его распределение
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-block-banner-image col-sm-6 col-md-7">
+                                        <div class="cover-bg"
+                                             style="background: linear-gradient(90deg, #d3c6c0 2%, transparent 40%);"></div>
+                                        <picture>
+                                            <source srcset="../img/page-projects/project-school.webp">
+                                            <img src="../img/page-projects/project-school.jpg" width="967" height="586"
+                                                 alt="Школа">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<div data-name="Образование" class="swiper-slide">
+                            <div class="project-block-banner">
+                                <div class="row">
+                                    <div class="project-block-banner-text col-sm-6 col-md-5">
+                                        <div class="title-h3 mb-3 mb-sm-5">
+                                            Обустройство компьютерного класса для школы в Москве
+                                        </div>
+                                        <p class="mb-3 mb-sm-5">
+                                            Мы осуществляем комплексные поставки IT-оборудования, настройку,
+                                            запуск и обслуживания выстроенных нами систем. Вам не нужны 10 различных
+                                            компаний,
+                                            достаточно только нас!
+                                        </p>
+                                        <ul class="list-group list-group-check">
+                                            <li class="list-group-check-item">
+                                                текущие задачи и бизнес-процессы
+                                            </li>
+                                            <li class="list-group-check-item">
+                                                существующую архитектуру сети
+                                            </li>
+                                            <li class="list-group-check-item">
+                                                существующее оборудование и его распределение
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-block-banner-image col-sm-6 col-md-7">
+                                        <div class="cover-bg"
+                                             style="background: linear-gradient(90deg, #d3c6c0 2%, transparent 40%);"></div>
+                                        <picture>
+                                            <source srcset="../img/page-projects/project-school.webp">
+                                            <img src="../img/page-projects/project-school.jpg" width="967" height="586"
+                                                 alt="Школа">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+                        <div data-name="Все" class="swiper-slide">
+                            <div class="project-block-banner">
+                                <div class="row">
+                                    <div class="project-block-banner-text col-sm-6 col-md-5">
+                                        <div class="title-h3 mb-3 mb-sm-5">
+                                            Обустройство компьютерного класса для школы в Москве
+                                        </div>
+                                        <p class="mb-3 mb-sm-5">
+                                            Мы осуществляем комплексные поставки IT-оборудования, настройку,
+                                            запуск и обслуживания выстроенных нами систем. Вам не нужны 10 различных
+                                            компаний,
+                                            достаточно только нас!
+                                        </p>
+                                        <ul class="list-group list-group-check">
+                                            <li class="list-group-check-item">
+                                                текущие задачи и бизнес-процессы
+                                            </li>
+                                            <li class="list-group-check-item">
+                                                существующую архитектуру сети
+                                            </li>
+                                            <li class="list-group-check-item">
+                                                существующее оборудование и его распределение
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-block-banner-image col-sm-6 col-md-7">
+                                        <div class="cover-bg"
+                                             style="background: linear-gradient(90deg, #d3c6c0 2%, transparent 40%);"></div>
+                                        <picture>
+                                            <source srcset="../img/page-projects/project-school.webp">
+                                            <img src="../img/page-projects/project-school.jpg" width="967" height="586"
+                                                 alt="Школа">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				<div class="d-flex align-items-center justify-content-center my-5 my-lg-0">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="hr hr-white"></div>
+  <question-temp></question-temp>
+	<footer-temp></footer-temp>
+</div>
+<modals></modals>
+</body>
+</html>

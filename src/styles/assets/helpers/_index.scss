@@ -1,0 +1,69 @@
+@import "bg";
+@import "typografy";
+@import "margin";
+
+.rounded-4 {
+  overflow: hidden;
+  border-radius: 30px !important;
+}
+
+.rounded-5 {
+  overflow: hidden;
+  border-radius: 60px !important;
+
+  @include media-breakpoint-down(smx) {
+    border-radius: 15px !important;
+  }
+}
+
+.hr-grey {
+  margin: 64px 0;
+  width: 100%;
+  height: 1px;
+  background: rgba($c-dark, .1);
+
+  @include media-breakpoint-down(md) {
+    margin: 24px 0;
+  }
+}
+
+.hr-white {
+  width: 100%;
+  height: 1px;
+  background: $c-white;
+}
+
+.sticky {
+  padding: 0;
+  transition: transform .2s linear;
+
+  .navbar {
+    @include media-breakpoint-down(lg) {
+      padding: 0;
+    }
+  }
+
+  .mburger {
+    top: 0;
+  }
+}
+
+.top-hidden {
+  transform: translateY(-85px);
+}
+
+.shadow-blue {
+  box-shadow: 1px 20px 50px 17px rgba($c-secondary, .3);
+}
+
+.phone {
+  white-space: nowrap;
+}
+
+
+
+@include media-breakpoint-down(lg) {
+  .resize-lg {
+    height: 80%;
+  }
+}

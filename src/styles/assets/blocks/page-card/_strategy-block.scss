@@ -1,0 +1,29 @@
+.strategy-block {
+  .title-h1 {
+    margin: 0 16px 0 0;
+    font-size: 40px;
+    background: linear-gradient(to top, $c-secondary 50%, #4EF5F5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(md) {
+      font-size: 75px;
+    }
+    @include media-breakpoint-up(sm) {
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &-item {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 22px;
+    }
+  }
+
+  .text-lumen-brown {
+    color: lighten($c-greydark, 20%);
+    @include media-breakpoint-down(md) {
+      background: transparent !important;
+    }
+  }
+}

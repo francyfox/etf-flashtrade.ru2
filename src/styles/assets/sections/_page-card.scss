@@ -1,0 +1,163 @@
+.page-card {
+  .section-hero {
+    background: url("/src/img/page-main/ball_white.webp") 10% calc(100% - 40px) / 312px no-repeat,
+    url("/src/img/page-main/ball_white.webp") 5% calc(100% - 149px) / 191px no-repeat,
+    url("/src/img/page-main/ball_white.webp") 110% 50% / 312px no-repeat,
+    url("/src/img/page-card/hero-bg.webp") 100% 0 / contain no-repeat;
+
+    &.nowebp-alpha {
+      background: url("/src/img/page-main/ball_white.png") 10% calc(100% - 40px) / 312px no-repeat,
+      url("/src/img/page-main/ball_white.png") 5% calc(100% - 149px) / 191px no-repeat,
+      url("/src/img/page-main/ball_white.png") 110% 50% / 312px no-repeat,
+      url("/src/img/page-card/hero-bg.jpg") 100% 0 / contain no-repeat;
+    }
+  }
+
+  .section-movie {
+    position: relative;
+    background: url("/src/img/page-card/movie-lines.webp") 0 50% / 100% 304px no-repeat;
+
+    &.nowebp-alpha {
+      background: url("/src/img/page-card/movie-lines.png") 0 50% / 100% 304px no-repeat;
+    }
+
+    @include media-breakpoint-down(smx) {
+      background: transparent;
+    }
+
+    .anim {
+      display: block;
+      position: absolute;
+      top: calc(50% - 152px);
+      left: 0;
+      width: 100%;
+      height: 304px;
+      z-index: 0;
+      overflow: hidden;
+      .neon {
+        display: block;
+        position: relative;
+        top: -19px;
+        width: 230px;
+        height: 66px;
+        background: url("/src/img/page-card/neon.webp") center / 230px 105px no-repeat;
+        transform: translateX(110vw);
+        animation: moveXfromRigth 3s linear infinite;
+        will-change: transform;
+
+        &.nowebp-alpha {
+          background: url("/src/img/page-card/neon.png") center / 230px 105px no-repeat;
+        }
+
+        @include media-breakpoint-down(md) {
+          left: -100px;
+          animation-duration: 1.5s;
+        }
+
+        @include media-breakpoint-down(smx) {
+          display: none;
+        }
+      }
+      @for $i from 1 to 5 {
+        .neon-#{$i} {
+          animation-duration: 1 + random(3) + s !important;
+          animation-delay: random(3) + s !important;
+        }
+      }
+    }
+    .container-xl {
+      iframe {
+        margin: 0 auto;
+        display: block;
+        z-index: 2;
+        opacity: .99;
+
+        @include media-breakpoint-down(xxl) {
+          max-width: calc(100% - 135px);
+          max-height: 50vw
+        }
+        @include media-breakpoint-down(smx) {
+          max-width: initial;
+          border-radius: 15px !important;
+        }
+      }
+    }
+  }
+
+  .section-system {
+    padding-top: 209px;
+    background: url("/src/img/page-main/ball_white.webp") calc(50% + 60px) calc(20% + 168px) / 167px no-repeat,
+    url("/src/img/page-main/ball_white.webp") 50% 20% / 309px no-repeat, $c-white;
+
+    &.nowebp-alpha {
+      background: url("/src/img/page-main/ball_white.png") calc(50% + 60px) calc(20% + 168px) / 167px no-repeat,
+      url("/src/img/page-main/ball_white.png") 50% 20% / 309px no-repeat, $c-white;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-top: 100px;
+    }
+    @include media-breakpoint-down(smx) {
+      padding-top: 40px;
+    }
+  }
+
+  .section-optimize {
+    background: linear-gradient(0deg, $c-dark 20%, transparent 30%), url("/src/img/page-card/system.webp") 90% -20px / 70% no-repeat, $c-dark;
+
+    &.nowebp-alpha {
+      background: linear-gradient(0deg, $c-dark 20%, transparent 30%), url("/src/img/page-card/system.png") 90% -20px / 70% no-repeat, $c-dark;
+    }
+    @include media-breakpoint-down(lg) {
+      background: url("/src/img/page-card/system.webp") 100% 0px / 80% no-repeat, $c-dark;
+
+      &.nowebp-alpha {
+        background: linear-gradient(0deg, $c-dark 20%, transparent 30%), url("/src/img/page-card/system.png") 90% -20px / 70% no-repeat, $c-dark;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      background: $c-dark;
+    }
+  }
+
+  .bg-gradient-right {
+    background: radial-gradient(ellipse 250px 250px at 60% 27%, rgba(#97FFBA, .3), transparent),
+    radial-gradient(ellipse 200px 200px at 76% 28%, rgba(#9CD1FF, .6), transparent);
+  }
+
+  .section-special {
+    background: radial-gradient(ellipse 400px 400px at 20% 60%, rgba(#9CD1FF, .4), transparent);
+    @include media-breakpoint-down(lg) {
+      padding-top: 0;
+    }
+  }
+
+  .section-task {
+    background: url("/src/img/page-main/ball_white.webp") 51% 30px / 129px no-repeat,
+    url("/src/img/page-main/ball_white.webp") 60% 40px / 312px no-repeat;
+
+    &.nowebp-alpha {
+      background: url("/src/img/page-main/ball_white.png") 51% 30px / 129px no-repeat,
+      url("/src/img/page-main/ball_white.png") 60% 40px / 312px no-repeat;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 80px 0;
+    }
+  }
+
+  .section-questions {
+    padding: 171px 0;
+    background: url("/src/img/page-card/bg-question.webp") 100% 50% / auto 100% no-repeat, #07080A !important;
+
+    @include media-breakpoint-down(md) {
+      padding: 80px 0;
+    }
+    @include media-breakpoint-down(smx) {
+      background: url("/src/img/page-card/bg-question.webp") 50% 50% / auto 100% no-repeat, #07080A !important;
+    }
+  }
+
+  .section-whatsapp {
+    padding-top: 0;
+  }
+}

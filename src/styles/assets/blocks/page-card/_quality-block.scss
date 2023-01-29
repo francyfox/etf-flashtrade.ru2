@@ -1,0 +1,26 @@
+.quality-block {
+  &-item {
+    a {
+      text-decoration: none;
+    }
+    img {
+      transition: opacity .1s ease-in-out;
+      @include media-breakpoint-down(lg) {
+        max-height: 324px;
+      }
+
+      @include media-breakpoint-down(smx) {
+        max-height: 150px;
+      }
+    }
+
+    &:hover {
+      figcaption {
+        color: $c-secondary;
+      }
+      img {
+        opacity: .7;
+      }
+    }
+  }
+}

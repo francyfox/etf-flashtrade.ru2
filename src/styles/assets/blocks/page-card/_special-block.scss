@@ -1,0 +1,28 @@
+.special-block {
+  .title-h1 {
+    @include media-breakpoint-up(md) {
+      line-height: 100px;
+    }
+  }
+  &-list-item {
+    @include media-breakpoint-down(smx) {
+      font-size: 14px;
+    }
+
+    .title-h4 {
+      margin-bottom: 30px;
+      @include media-breakpoint-down(smx) {
+        margin-bottom: 15px;
+      }
+    }
+
+    img {
+      object-fit: contain;
+
+      @include media-breakpoint-down(smx) {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

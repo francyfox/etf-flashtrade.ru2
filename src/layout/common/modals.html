@@ -1,0 +1,128 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menu" aria-labelledby="offcanvasMenu">
+    <div class="offcanvas-header bg-grey">
+        <a class="brand d-flex align-items-center" href="/">
+            <picture class="d-flex me-2">
+                <img src="../img/logo.svg" class="injectable" width="40" height="40">
+            </picture>
+            <span class="d-block">ETF<span class="d-none d-sm-inline"> - FLASHTRADE</span></span>
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-contacts d-flex justify-content-between align-items-center bg-white px-3 py-2">
+        <ul class="list-social d-flex">
+            <li class="list-social-item">
+                <a href="#" class="text-primary" aria-label="telegram">
+                    <img src="../img/icons/telegram-plane.svg" width="24" height="24" fill="#000" class="injectable">
+                </a>
+            </li>
+            <li class="list-social-item">
+                <a href="#" class="text-primary" aria-label="whatsapp">
+                    <i class="fab fa-whatsapp" style="color: #000;"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="phone d-flex align-items-center">
+            <a href="tel:+74952255249">+7 (495) 225-52-49</a>
+        </div>
+    </div>
+    <div class="offcanvas-body bg-grey">
+        <ul id="burger_nav" class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/card.html">Оффер</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="services.html">Услуги</a>
+                <ul class="dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services_list.html">Услуги с ЦА</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services_list_links.html">Услуги без ЦА</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/ability.html"> Компетенции </a>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ability_inner.html">Для директора</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/comments.html">Отзывы</a>
+            </li>
+            <li class="nav-item">
+                <a href="/projects.html" class="nav-link"> Проекты </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="modal modal-movie fade" tabindex="-1" id="modal-movie" aria-labelledby="exampleModalLabel" aria-hidden="true">> <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <iframe width="1232" height="693" src="https://www.youtube.com/embed/imhfp2-i-zg" title="YouTube video player" frameborder="0" referrerpolicy="no-referrer" loading="lazy" allowfullscreen>
+                <p>Iframe не поддерживается</p>
+            </iframe>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal modal-form fade" id="modal-form-feedback" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content dark">
+            <div class="modal-header">
+                <h5 class="modal-title title-h3 title-heavy" id="staticBackdropLabel"> Оставить заявку </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe name="modal-form-output" class="d-none" frameborder="0"></iframe>
+                <form class="form row g-3 needs-validation" action="/api/form/feedback" method="post" target="modal-form-output" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="on" novalidate>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input name="username" type="text" class="form-control" id="username" placeholder="Имя *" required>
+                            <div class="invalid-tooltip">Заполните имя</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="tel" class="form-control" id="phone" placeholder="Телефон *" required>
+                            <div class="invalid-tooltip">Заполните телефон</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="email" placeholder="Почта">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="file">
+                            <div class="invalid-tooltip"> Файл не действителен </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="input-group flex-nowrap">
+                            <input class="form-check-input flex-shrink-0 mr-2" type="checkbox" value="" id="privacy" required>
+                            <label class="form-check-label" for="privacy"> Я ознакомлен и согласен с <a class="link" href="#">Политикой конфиденциальности</a>
+                            </label>
+                            <div class="invalid-tooltip"> Для продолжения необходимо дать согласие. </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-sm btn-primary" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

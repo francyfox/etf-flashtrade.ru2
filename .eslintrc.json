@@ -1,0 +1,111 @@
+{
+  "rules": {
+    // Import Rules
+    "import/no-mutable-exports": 2,
+    "import/export": 2,
+
+    "arrow-parens": [
+      "error",
+      "as-needed",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "implicit-arrow-linebreak": "error",
+    "no-useless-constructor": "error",
+    "no-dupe-class-members": "error",
+    "class-methods-use-this": "error",
+    "no-duplicate-imports": "error",
+    "semi-style": ["error", "last"],
+    "no-lonely-if": "error",
+    "require-await": "error",
+    "dot-notation": "error",
+    "object-shorthand": "error",
+    "no-useless-rename": "error",
+    "no-debugger": 1,
+    "prefer-template": "error",
+    "no-var": 1,
+    "no-unused-vars": 1,
+    "camelcase": 1,
+    "no-nested-ternary": 1,
+    "no-console": 1,
+    "no-template-curly-in-string": 1,
+    "no-self-compare": 1,
+    "import/prefer-default-export": 0,
+    "arrow-body-style": 1,
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        "devDependencies": false
+      }
+    ],
+    /**********************/
+    /*   Unicorn Rules    */
+    /**********************/
+    "unicorn/prefer-switch": 1,
+    // Pass error message when throwing errors
+    "unicorn/error-message": "error",
+    // Uppercase regex escapes
+    "unicorn/escape-case": "error",
+    // Array.isArray instead of instanceof
+    "unicorn/no-array-instanceof": "error",
+    // Prevent deprecated `new Buffer()`
+    "unicorn/no-new-buffer": "error",
+    // Keep regex literals safe!
+    "unicorn/no-unsafe-regex": "off",
+    // Lowercase number formatting for octal, hex, binary (0x12 instead of 0X12)
+    "unicorn/number-literal-case": "error",
+    // ** instead of Math.pow()
+    "unicorn/prefer-exponentiation-operator": "error",
+    // includes over indexOf when checking for existence
+    "unicorn/prefer-includes": "error",
+    // String methods startsWith/endsWith instead of more complicated stuff
+    "unicorn/prefer-starts-ends-with": "error",
+    // textContent instead of innerText
+    "unicorn/prefer-text-content": "error",
+    // Enforce throwing type error when throwing error while checking typeof
+    "unicorn/prefer-type-error": "error",
+    // Use new when throwing error
+    "unicorn/throw-new-error": "error"
+  },
+  "ignorePatterns": [
+    "public",
+    "dist",
+    "node_modules",
+    "webpack.*",
+    "config/paths.js"
+  ],
+  "env": {
+//    "es2022": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "import",
+    "unicorn"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack.common.js"
+      }
+    }
+  }
+}

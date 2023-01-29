@@ -1,0 +1,27 @@
+.page-card {
+  .hero-block {
+    position: relative;
+
+    &-item {
+      z-index: 2;
+      .text-lumen {
+        @include media-breakpoint-down(md) {
+          background: transparent;
+        }
+      }
+    }
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include media-breakpoint-down(md) {
+        top: -40%;
+      }
+    }
+
+    picture img {
+      object-fit: contain;
+    }
+  }
+}

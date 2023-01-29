@@ -1,0 +1,21 @@
+.page-ability {
+  .section-quality {
+    background: url("/src/img/page-ability/bg-server.webp") top right / cover no-repeat, $dark;
+  }
+  .section-director {
+    background: linear-gradient(90deg, $c-grey 50%, transparent 80%),
+    url("/src/img/page-ability/ability-director.webp") top right / contain no-repeat, $c-grey;
+
+    @include media-breakpoint-down(xl) {
+      background: linear-gradient(90deg, $c-grey 0%, transparent 150%),
+      url("/src/img/page-ability/ability-director.webp") top right / contain no-repeat, $c-grey;
+    }
+    @include media-breakpoint-down(smx) {
+      background-position: 100% 60px;
+    }
+  }
+  .section-task {
+    background: radial-gradient(ellipse 150px 150px at center, rgba(#97FFBA, .3), transparent),
+    radial-gradient(ellipse 250px 250px at 63% 65%, rgba(#9CD1FF, .5), transparent), $c-white;
+  }
+}

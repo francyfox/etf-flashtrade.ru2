@@ -1,0 +1,38 @@
+.comment-block {
+  .swiper-out-nav.swiper-nav-arrow .swiper-button-prev {
+    margin-right: 39px;
+  }
+
+  .swiper-creative .swiper-slide {
+
+    @include media-breakpoint-down(md) {
+      padding-top: 80px !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0 !important;
+    }
+  }
+
+  &-item {
+    .title-h3 {
+      margin-bottom: 41px;
+    }
+  }
+
+  &-text {
+    margin-bottom: 33px;
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+  }
+
+  .shadow-circle, .movie-play {
+    @include media-breakpoint-down(sm) {
+      transform: scale(0.8);
+    }
+    @include media-breakpoint-down(smx) {
+      transform: scale(0.5);
+    }
+  }
+}

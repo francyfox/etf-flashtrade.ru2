@@ -1,0 +1,18 @@
+.task-block {
+  &-text {
+    @include media-breakpoint-down(md) {
+      svg {
+        max-width: 47px;
+      }
+    }
+    p {
+      line-height: 40px;
+      margin-bottom: 55px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+  }
+}

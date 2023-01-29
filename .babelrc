@@ -1,0 +1,14 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "env": {
+    "production": {
+      "compact": true,
+      "comments": false,
+      "minified": true
+    }
+  },
+  "sourceMaps": true
+}

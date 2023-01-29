@@ -1,0 +1,113 @@
+
+.filepond--root {
+  border: 0;
+  border-radius: 8px !important;
+  background-color: rgba($c-white, .3);
+}
+
+.filepond--root .filepond--credits {
+  display: none;
+}
+
+.filepond--file-action-button {
+  cursor: pointer;
+}
+
+/* the text color of the drop label*/
+.filepond--drop-label {
+  min-height: 60px !important;
+  color: $c-white !important;
+  font-size: 20px !important;
+  background: transparent;
+
+  @include media-breakpoint-down(md) {
+    min-height: 80px !important;
+  }
+
+  label {
+    display: flex !important;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+      display: block !important;
+    }
+  }
+
+  svg {
+    margin-right: 10px;
+    font-size: 32px !important;
+  }
+}
+
+/* underline color for "Browse" button */
+.filepond--label-action {
+  text-decoration-color: $c-white;
+}
+
+/* the background color of the filepond drop area */
+.filepond--panel-root {
+  background: transparent !important;
+}
+
+/* the border radius of the drop area */
+.filepond--panel-root {
+  border-radius: 0.5em;
+}
+
+.filepond--item {
+  padding: 2px;
+}
+
+/* the border radius of the file item */
+.filepond--item-panel {
+  border-radius: 0.5em;
+}
+
+/* the background color of the file and file panel (used when dropping an image) */
+.filepond--item-panel {
+  background-color: transparent;
+}
+
+.filepond--file {
+  background: $c-white;
+  color: $c-primary;
+}
+
+/* the background color of the black action buttons */
+.filepond--file-action-button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* the icon color of the black action buttons */
+.filepond--file-action-button {
+  color: $c-primary;
+}
+
+/* the color of the focus ring */
+.filepond--file-action-button:hover,
+.filepond--file-action-button:focus {
+  box-shadow: none;
+}
+
+/* the text color of the file status and info labels */
+.filepond--file {
+  color: $c-primary !important;
+}
+
+/* error state color */
+[data-filepond-item-state*='error'].filepond--item-panel,
+[data-filepond-item-state*='invalid'] .filepond--item-panel {
+  background: transparent;
+  box-shadow: 0 0 0 2px $danger;
+}
+
+[data-filepond-item-state='processing-complete'] .filepond--item-panel {
+  background-color: $success;
+}
+
+/* bordered drop area */
+.filepond--panel-root {
+  background-color: transparent;
+  border-radius: 0 !important;
+  border-bottom: 0;
+}

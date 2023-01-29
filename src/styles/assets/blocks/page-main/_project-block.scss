@@ -1,0 +1,70 @@
+.project-block {
+  .swiper {
+    background: $c-skin;
+  }
+
+  &-list-item {
+    &:nth-child(2n+1) {
+      .project-block-banner-text {
+        @include media-breakpoint-up(md) {
+          padding-left: 66px;
+          padding-right: 12px;
+        }
+      }
+      picture img {
+        object-position: right;
+      }
+    }
+    &:nth-child(2n)  {
+      .project-block-banner-text {
+        @include media-breakpoint-up(md) {
+          padding-left: 12px;
+          padding-right: 66px;
+        }
+      }
+      picture img {
+        object-position: left;
+      }
+    }
+  }
+
+  &-banner {
+    height: 100%;
+    background: $c-skin;
+
+    &-image {
+      display: flex;
+      position: relative;
+
+      @include media-breakpoint-down(sm) {
+        order: -1;
+      }
+
+      .cover-bg {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      picture img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #000;
+      }
+    }
+
+    &-text {
+      padding: 68px 12px 136px 66px;
+
+      @include media-breakpoint-down(md) {
+        padding: 38px 12px 46px 36px;
+      }
+      font-size: 17px;
+    }
+  }
+}

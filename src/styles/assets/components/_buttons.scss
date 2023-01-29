@@ -1,0 +1,143 @@
+.btn-primary, .btn-secondary {
+  padding: 22px 51px 23px 37px;
+  position: relative;
+  color: $c-primary;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid $c-secondary;
+  border-radius: 45px;
+  background: transparent;
+
+  @include media-breakpoint-down(smx) {
+    padding: 12px 31px 13px 17px;
+    font-size: 16px;
+  }
+
+  &:focus {
+    color: $c-dark;
+    background: transparent;
+    box-shadow: none !important;
+  }
+
+  &:hover {
+    border-color: $c-secondary;
+    background: $c-secondary;
+    color: $c-white;
+  }
+
+  &:hover:after {
+    right: -55px;
+
+    @include media-breakpoint-down(xl) {
+      right: -45px;
+    }
+    @include media-breakpoint-down(smx) {
+      right: -40px;
+    }
+  }
+
+  &:after {
+    display: flex;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -45px;
+    width: 66px;
+    height: 100%;
+    background: url("/src/img/icons/arrow-right.svg") left center / contain no-repeat;
+    transition: right .1s linear;
+
+    @include media-breakpoint-down(xl) {
+      right: -40px;
+    }
+
+    @include media-breakpoint-down(smx) {
+      top: 0;
+      right: -30px;
+      width: 45px;
+      background-size: contain;
+    }
+  }
+}
+
+.btn-secondary {
+  &:after {
+    display: none;
+  }
+}
+
+.btn-more {
+  padding: 18px 51px 18px 37px;
+  position: relative;
+  color: $c-primary;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid $c-secondary;
+  border-radius: 45px;
+  background: transparent;
+}
+
+.btn-show {
+  color: $c-bluelight;
+  font-size: 30px;
+  font-weight: 700;
+
+  @include media-breakpoint-down(md) {
+    font-size: 21px;
+  }
+
+  &:hover {
+    &:after, &:before {
+      letter-spacing: 20px;
+      @include media-breakpoint-down(md) {
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  &:after, &:before {
+    margin: 0 17px;
+    display: flex;
+    top: -6px;
+    position: relative;
+    align-items: center;
+    content: "...";
+    color: $c-secondary;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transition: letter-spacing .1s linear;
+  }
+}
+
+.btn-sm {
+  padding: 8px 24px 8px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+
+  @include media-breakpoint-down(smx) {
+    padding: 8px 14px 8px;
+    font-size: 16px;
+  }
+
+  &:hover:after {
+    right: -60px;
+    @include media-breakpoint-down(smx) {
+      right: -40px;
+    }
+  }
+
+  &:after {
+    top: 0px;
+    right: -55px;
+
+    @include media-breakpoint-down(sm) {
+      background-size: 45px;
+      background-position: 0 50%;
+    }
+
+    @include media-breakpoint-down(smx) {
+      right: -35px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.advice-block {
+  &-item {
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 20px;
+    }
+    svg {
+      margin-right: 22px;
+      @include media-breakpoint-down(sm) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    .title-h4 {
+      font-size: 30px !important;
+    }
+  }
+
+  &-item:last-child .title-h4{
+    @include media-breakpoint-down(xl) {
+      font-size: 25px !important;
+    }
+  }
+}
